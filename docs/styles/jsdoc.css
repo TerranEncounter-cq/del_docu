@@ -2,6 +2,37 @@
   box-sizing: border-box
 }
 
+.directory-structure {
+  background-color: #f8f8f8; /* Lighter grey background for the whole section */
+  padding: 20px; /* Padding around the content */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+  border-radius: 5px; /* Rounded corners for the section */
+}
+
+.directory-entry {
+  background-color: #fff; /* White background for entries */
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 15px; /* Padding inside each entry */
+  margin-bottom: 10px; /* Space between entries */
+  border-radius: 5px; /* Rounded corners for each entry */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+}
+
+.directory-entry h4 {
+  color: #333; /* Dark grey color for directory names */
+  margin-bottom: 5px; /* Space below the directory name */
+}
+
+.directory-entry p {
+  margin: 0; /* Remove margin from paragraph */
+  line-height: 1.5; /* Increased line height for readability */
+  color: #666; /* Dark grey text for readability */
+}
+
+.directory-entry strong {
+  color: #333; /* Dark grey for emphasis */
+}
+
 html, body {
   height: 100%;
   width: 100%;
