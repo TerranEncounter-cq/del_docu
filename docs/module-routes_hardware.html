@@ -1,0 +1,3027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>routes/hardware - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BadRequest.html">BadRequest</a></li><li><a href="Forbidden.html">Forbidden</a></li><li><a href="NotFound.html">NotFound</a></li><li><a href="Unauthorized.html">Unauthorized</a></li></ul><h3>Modules</h3><ul><li><a href="module-Controller_Schedule.html">Controller/Schedule</a><ul class='methods'><li data-type='method'><a href="module-Controller_Schedule.html#~calibrateTimezone">calibrateTimezone</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~cleanupCVWaitList">cleanupCVWaitList</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~cleanupDropin">cleanupDropin</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~downloadIDImages">downloadIDImages</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~followUp">followUp</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~generateInvoices">generateInvoices</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~scheduleNextRun">scheduleNextRun</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~sendNotifications">sendNotifications</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~sendPN">sendPN</a></li></ul></li><li><a href="module-Controller_authentication.html">Controller/authentication</a></li><li><a href="module-Controller_button.html">Controller/button</a><ul class='methods'><li data-type='method'><a href="module-Controller_button.html#~statusButoon">statusButoon</a></li></ul></li><li><a href="module-Controller_camera.html">Controller/camera</a><ul class='methods'><li data-type='method'><a href="module-Controller_camera.html#~countRecords">countRecords</a></li><li data-type='method'><a href="module-Controller_camera.html#~createCameraZone">createCameraZone</a></li><li data-type='method'><a href="module-Controller_camera.html#~createNewCamera">createNewCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~editCamera">editCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~enableCamera">enableCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~generateStreamURL">generateStreamURL</a></li><li data-type='method'><a href="module-Controller_camera.html#~getKinesesStreamingUrl">getKinesesStreamingUrl</a></li><li data-type='method'><a href="module-Controller_camera.html#~getNextMonitorId">getNextMonitorId</a></li><li data-type='method'><a href="module-Controller_camera.html#~getRecords">getRecords</a></li><li data-type='method'><a href="module-Controller_camera.html#~getToken">getToken</a></li><li data-type='method'><a href="module-Controller_camera.html#~pad">pad</a></li><li data-type='method'><a href="module-Controller_camera.html#~refreshToken">refreshToken</a></li><li data-type='method'><a href="module-Controller_camera.html#~reloadCameraStreams">reloadCameraStreams</a></li><li data-type='method'><a href="module-Controller_camera.html#~removeCamera">removeCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~triggerCameraStreams">triggerCameraStreams</a></li></ul></li><li><a href="module-Controller_contact.html">Controller/contact</a><ul class='methods'><li data-type='method'><a href="module-Controller_contact.html#~convertJsonToCsv">convertJsonToCsv</a></li><li data-type='method'><a href="module-Controller_contact.html#~getById">getById</a></li><li data-type='method'><a href="module-Controller_contact.html#~getContact">getContact</a></li><li data-type='method'><a href="module-Controller_contact.html#~getContactSub">getContactSub</a></li><li data-type='method'><a href="module-Controller_contact.html#~getUpdate">getUpdate</a></li><li data-type='method'><a href="module-Controller_contact.html#~toCsv">toCsv</a></li><li data-type='method'><a href="module-Controller_contact.html#~updateContactSub">updateContactSub</a></li><li data-type='method'><a href="module-Controller_contact.html#~validateIdLoad">validateIdLoad</a></li></ul></li><li><a href="module-Controller_dashboard.html">Controller/dashboard</a><ul class='methods'><li data-type='method'><a href="module-Controller_dashboard.html#~getDashboardStats">getDashboardStats</a></li></ul></li><li><a href="module-Controller_invoices.html">Controller/invoices</a><ul class='methods'><li data-type='method'><a href="module-Controller_invoices.html#~createInvoice">createInvoice</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoices">viewInvoices</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoicesById">viewInvoicesById</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoicesByUser">viewInvoicesByUser</a></li></ul></li><li><a href="module-Controller_keypad.html">Controller/keypad</a><ul class='methods'><li data-type='method'><a href="module-Controller_keypad.html#~createPasscode">createPasscode</a></li><li data-type='method'><a href="module-Controller_keypad.html#~deletePasscode">deletePasscode</a></li><li data-type='method'><a href="module-Controller_keypad.html#~listPasscodes">listPasscodes</a></li></ul></li><li><a href="module-Controller_lock_august_index.html">Controller/lock/august/index</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_august_index.html#~getLogs">getLogs</a></li><li data-type='method'><a href="module-Controller_lock_august_index.html#~lockStatus">lockStatus</a></li><li data-type='method'><a href="module-Controller_lock_august_index.html#~sendCommand">sendCommand</a></li></ul></li><li><a href="module-Controller_lock_august_token.html">Controller/lock/august/token</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_august_token.html#~confirm">confirm</a></li><li data-type='method'><a href="module-Controller_lock_august_token.html#~session">session</a></li><li data-type='method'><a href="module-Controller_lock_august_token.html#~validate">validate</a></li></ul></li><li><a href="module-Controller_lock_index.html">Controller/lock/index</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_index.html#~generateSign">generateSign</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~getLogs">getLogs</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~getStatus">getStatus</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~sendCommand">sendCommand</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~toggleLock">toggleLock</a></li></ul></li><li><a href="module-Controller_lock_switchbot.html">Controller/lock/switchbot</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_switchbot.html#~generateSign">generateSign</a></li><li data-type='method'><a href="module-Controller_lock_switchbot.html#~getDevices">getDevices</a></li><li data-type='method'><a href="module-Controller_lock_switchbot.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="module-Controller_lock_switchbot.html#~sendCommand">sendCommand</a></li></ul></li><li><a href="module-Controller_meeting.html">Controller/meeting</a><ul class='methods'><li data-type='method'><a href="module-Controller_meeting.html#~meetingStats">meetingStats</a></li><li data-type='method'><a href="module-Controller_meeting.html#~sendTempCommand">sendTempCommand</a></li></ul></li><li><a href="module-Controller_notification.html">Controller/notification</a><ul class='methods'><li data-type='method'><a href="module-Controller_notification.html#~sendConfirmationEmail">sendConfirmationEmail</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendConfirmationSMS">sendConfirmationSMS</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendEmail">sendEmail</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendSms">sendSms</a></li></ul></li><li><a href="module-Controller_order.html">Controller/order</a><ul class='methods'><li data-type='method'><a href="module-Controller_order.html#~createAndNotify">createAndNotify</a></li><li data-type='method'><a href="module-Controller_order.html#~formatOrderDetails">formatOrderDetails</a></li><li data-type='method'><a href="module-Controller_order.html#~formatUserDetails">formatUserDetails</a></li><li data-type='method'><a href="module-Controller_order.html#~updateAndNotify">updateAndNotify</a></li></ul></li><li><a href="module-Controller_property.html">Controller/property</a><ul class='methods'><li data-type='method'><a href="module-Controller_property.html#~assignPropertyToUser">assignPropertyToUser</a></li><li data-type='method'><a href="module-Controller_property.html#~calcAvailability">calcAvailability</a></li><li data-type='method'><a href="module-Controller_property.html#~calcMonthAvailability">calcMonthAvailability</a></li><li data-type='method'><a href="module-Controller_property.html#~cloneProperty">cloneProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~getSinglePublicProperty">getSinglePublicProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~makeBook">makeBook</a></li><li data-type='method'><a href="module-Controller_property.html#~newProperty">newProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~propertiesPublic">propertiesPublic</a></li><li data-type='method'><a href="module-Controller_property.html#~propertiesUser">propertiesUser</a></li><li data-type='method'><a href="module-Controller_property.html#~property">property</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyAssignList">propertyAssignList</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyList">propertyList</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyListCustomSearch">propertyListCustomSearch</a></li><li data-type='method'><a href="module-Controller_property.html#~updateProperty">updateProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~updatePropertyKit">updatePropertyKit</a></li></ul></li><li><a href="module-Controller_shipment.html">Controller/shipment</a><ul class='methods'><li data-type='method'><a href="module-Controller_shipment.html#~formattedShipment">formattedShipment</a></li><li data-type='method'><a href="module-Controller_shipment.html#~sendShipmentNotification">sendShipmentNotification</a></li></ul></li><li><a href="module-Controller_transactions.html">Controller/transactions</a><ul class='methods'><li data-type='method'><a href="module-Controller_transactions.html#~createTransaction">createTransaction</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionByHardware">viewTransactionByHardware</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionById">viewTransactionById</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionByProperty">viewTransactionByProperty</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactions">viewTransactions</a></li></ul></li><li><a href="module-constants_cognito.html">constants/cognito</a></li><li><a href="module-constants_index.html">constants/index</a></li><li><a href="module-controllers_notifications.html">controllers/notifications</a><ul class='methods'><li data-type='method'><a href="module-controllers_notifications.html#~sendInstructions">sendInstructions</a></li><li data-type='method'><a href="module-controllers_notifications.html#~sendReminder">sendReminder</a></li></ul></li><li><a href="module-controllers_property.html">controllers/property</a><ul class='methods'><li data-type='method'><a href="module-controllers_property.html#~associateKit">associateKit</a></li></ul></li><li><a href="module-events_emitter.html">events/emitter</a></li><li><a href="module-helpers_account.html">helpers/account</a><ul class='methods'><li data-type='method'><a href="module-helpers_account.html#~addHardware">addHardware</a></li><li data-type='method'><a href="module-helpers_account.html#~addSwitchBotHardware">addSwitchBotHardware</a></li></ul></li><li><a href="module-helpers_aws-s3.html">helpers/aws-s3</a><ul class='methods'><li data-type='method'><a href="module-helpers_aws-s3.html#.getFileExtensionFromBase64">getFileExtensionFromBase64</a></li><li data-type='method'><a href="module-helpers_aws-s3.html#.uploadS3">uploadS3</a></li></ul></li><li><a href="module-helpers_button.html">helpers/button</a><ul class='methods'><li data-type='method'><a href="module-helpers_button.html#~actuateButton">actuateButton</a></li></ul></li><li><a href="module-helpers_calendar.html">helpers/calendar</a><ul class='methods'><li data-type='method'><a href="module-helpers_calendar.html#~dateTimeForCalander">dateTimeForCalander</a></li><li data-type='method'><a href="module-helpers_calendar.html#~deleteEvent">deleteEvent</a></li><li data-type='method'><a href="module-helpers_calendar.html#~getEvents">getEvents</a></li><li data-type='method'><a href="module-helpers_calendar.html#~insertEvent">insertEvent</a></li></ul></li><li><a href="module-helpers_camera.html">helpers/camera</a><ul class='methods'><li data-type='method'><a href="module-helpers_camera.html#~streamToBuffer">streamToBuffer</a></li></ul></li><li><a href="module-helpers_cognito.html">helpers/cognito</a><ul class='methods'><li data-type='method'><a href="module-helpers_cognito.html#~assignUserToGroup">assignUserToGroup</a></li><li data-type='method'><a href="module-helpers_cognito.html#~cognitoSignUp">cognitoSignUp</a></li><li data-type='method'><a href="module-helpers_cognito.html#~deleteUserFromCognito">deleteUserFromCognito</a></li><li data-type='method'><a href="module-helpers_cognito.html#~getSingleCognitoUser">getSingleCognitoUser</a></li><li data-type='method'><a href="module-helpers_cognito.html#~setPermanentUserPassword">setPermanentUserPassword</a></li><li data-type='method'><a href="module-helpers_cognito.html#~signInCognito">signInCognito</a></li><li data-type='method'><a href="module-helpers_cognito.html#~verifyHeaders">verifyHeaders</a></li><li data-type='method'><a href="module-helpers_cognito.html#~verifyToken">verifyToken</a></li></ul></li><li><a href="module-helpers_emailGeneration.html">helpers/emailGeneration</a><ul class='methods'><li data-type='method'><a href="module-helpers_emailGeneration.html#~formatDateToGoogleCalendar">formatDateToGoogleCalendar</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~formattingTime">formattingTime</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateBookingConfirmationEmail">generateBookingConfirmationEmail</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateGoogleCalendarUrl">generateGoogleCalendarUrl</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateInstructionsEmail">generateInstructionsEmail</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateReminderEmail">generateReminderEmail</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~insertInEmailLayout">insertInEmailLayout</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~urlEncode">urlEncode</a></li></ul></li><li><a href="module-helpers_keypad.html">helpers/keypad</a><ul class='methods'><li data-type='method'><a href="module-helpers_keypad.html#~passcodeList">passcodeList</a></li></ul></li><li><a href="module-helpers_kit.html">helpers/kit</a><ul class='methods'><li data-type='method'><a href="module-helpers_kit.html#~associateHardware">associateHardware</a></li><li data-type='method'><a href="module-helpers_kit.html#~closeKitToUser">closeKitToUser</a></li><li data-type='method'><a href="module-helpers_kit.html#~registerKitToUser">registerKitToUser</a></li></ul></li><li><a href="module-helpers_switchbot.html">helpers/switchbot</a><ul class='methods'><li data-type='method'><a href="module-helpers_switchbot.html#~generateSign">generateSign</a></li><li data-type='method'><a href="module-helpers_switchbot.html#~getDevices">getDevices</a></li><li data-type='method'><a href="module-helpers_switchbot.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="module-helpers_switchbot.html#~sendCommand">sendCommand</a></li></ul></li><li><a href="module-helpers_utilities.html">helpers/utilities</a><ul class='methods'><li data-type='method'><a href="module-helpers_utilities.html#~downloadImage">downloadImage</a></li><li data-type='method'><a href="module-helpers_utilities.html#~relativeTimeConversion">relativeTimeConversion</a></li><li data-type='method'><a href="module-helpers_utilities.html#~splitTags">splitTags</a></li></ul></li><li><a href="module-middleware_adminRole.html">middleware/adminRole</a><ul class='methods'><li data-type='method'><a href="module-middleware_adminRole.html#~adminRole">adminRole</a></li></ul></li><li><a href="module-middleware_authMiddleware.html">middleware/authMiddleware</a><ul class='methods'><li data-type='method'><a href="module-middleware_authMiddleware.html#~authMiddleware">authMiddleware</a></li></ul></li><li><a href="module-middleware_errorHandler.html">middleware/errorHandler</a><ul class='methods'><li data-type='method'><a href="module-middleware_errorHandler.html#~errorHandler">errorHandler</a></li></ul></li><li><a href="module-models_account.html">models/account</a></li><li><a href="module-models_action.html">models/action</a></li><li><a href="module-models_building.html">models/building</a></li><li><a href="module-models_confirmationCode.html">models/confirmationCode</a></li><li><a href="module-models_contact.html">models/contact</a></li><li><a href="module-models_discount.html">models/discount</a></li><li><a href="module-models_hardware.html">models/hardware</a></li><li><a href="module-models_invoice.html">models/invoice</a></li><li><a href="module-models_invoiceInfo.html">models/invoiceInfo</a></li><li><a href="module-models_kit.html">models/kit</a></li><li><a href="module-models_meeting.html">models/meeting</a></li><li><a href="module-models_order.html">models/order</a></li><li><a href="module-models_paymentMethod.html">models/paymentMethod</a></li><li><a href="module-models_product.html">models/product</a></li><li><a href="module-models_property.html">models/property</a></li><li><a href="module-models_settings.html">models/settings</a></li><li><a href="module-models_shipment.html">models/shipment</a></li><li><a href="module-models_subscription.html">models/subscription</a></li><li><a href="module-models_transaction.html">models/transaction</a></li><li><a href="module-models_user.html">models/user</a></li><li><a href="module-routes_account.html">routes/account</a></li><li><a href="module-routes_agents.html">routes/agents</a></li><li><a href="module-routes_button.html">routes/button</a></li><li><a href="module-routes_camera.html">routes/camera</a></li><li><a href="module-routes_contact.html">routes/contact</a><ul class='methods'><li data-type='method'><a href="module-routes_contact.html#.get/">get/</a></li><li data-type='method'><a href="module-routes_contact.html#.get/:id?">get/:id?</a></li><li data-type='method'><a href="module-routes_contact.html#.get/toCsv">get/toCsv</a></li><li data-type='method'><a href="module-routes_contact.html#.post/validateid/load">post/validateid/load</a></li><li data-type='method'><a href="module-routes_contact.html#.put/update/:id?">put/update/:id?</a></li><li data-type='method'><a href="module-routes_contact.html#.subscription/:id">subscription/:id</a></li></ul></li><li><a href="module-routes_contactVerified.html">routes/contactVerified</a></li><li><a href="module-routes_dashboard.html">routes/dashboard</a></li><li><a href="module-routes_discount.html">routes/discount</a><ul class='methods'><li data-type='method'><a href="module-routes_discount.html#.get/">get/</a></li><li data-type='method'><a href="module-routes_discount.html#.get/:code">get/:code</a></li><li data-type='method'><a href="module-routes_discount.html#.get/generate-code">get/generate-code</a></li><li data-type='method'><a href="module-routes_discount.html#.post/">post/</a></li></ul></li><li><a href="module-routes_documents.html">routes/documents</a></li><li><a href="module-routes_hardware.html">routes/hardware</a><ul class='methods'><li data-type='method'><a href="module-routes_hardware.html#.delete/:id">delete/:id</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/:id/admin/sync">get/:id/admin/sync</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/:id/stream">get/:id/stream</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/:id?">get/:id?</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/list/cameras">get/list/cameras</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/session/:property/:uid/agent">get/session/:property/:uid/agent</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/session/:property/:uid/manager">get/session/:property/:uid/manager</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/">post/</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/:id">post/:id</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/:id/stream/test">post/:id/stream/test</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/admin/buzzer">post/admin/buzzer</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/admin/sync">post/admin/sync</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/app/ping">post/app/ping</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/bulk">post/bulk</a></li><li data-type='method'><a href="module-routes_hardware.html#~generateStreamUrl">generateStreamUrl</a></li><li data-type='method'><a href="module-routes_hardware.html#~sendPN">sendPN</a></li></ul></li><li><a href="module-routes_index.html">routes/index</a><ul class='methods'><li data-type='method'><a href="module-routes_index.html#.get/logout">get/logout</a></li><li data-type='method'><a href="module-routes_index.html#.use/admin">use/admin</a></li><li data-type='method'><a href="module-routes_index.html#.use/public">use/public</a></li><li data-type='method'><a href="module-routes_index.html#.use/public/images/contact">use/public/images/contact</a></li><li data-type='method'><a href="module-routes_index.html#.use/public/images/property">use/public/images/property</a></li></ul></li><li><a href="module-routes_invoice.html">routes/invoice</a></li><li><a href="module-routes_invoiceInfo.html">routes/invoiceInfo</a><ul class='methods'><li data-type='method'><a href="module-routes_invoiceInfo.html#.CreateInvoiceInfo">CreateInvoiceInfo</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.DeleteInvoiceInfo">DeleteInvoiceInfo</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.GetInvoiceInfo">GetInvoiceInfo</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.GetInvoiceInfoAdmin">GetInvoiceInfoAdmin</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.UpdateInvoiceInfo">UpdateInvoiceInfo</a></li></ul></li><li><a href="module-routes_keypad.html">routes/keypad</a><ul class='methods'><li data-type='method'><a href="module-routes_keypad.html#.PasscodeRoutes">PasscodeRoutes</a></li></ul></li><li><a href="module-routes_kit.html">routes/kit</a><ul class='methods'><li data-type='method'><a href="module-routes_kit.html#.ConfirmKit">ConfirmKit</a></li><li data-type='method'><a href="module-routes_kit.html#.CreateKit">CreateKit</a></li><li data-type='method'><a href="module-routes_kit.html#.DeleteKit">DeleteKit</a></li><li data-type='method'><a href="module-routes_kit.html#.GetAllKits">GetAllKits</a></li><li data-type='method'><a href="module-routes_kit.html#.GetKitById">GetKitById</a></li><li data-type='method'><a href="module-routes_kit.html#.GetOrderKits">GetOrderKits</a></li><li data-type='method'><a href="module-routes_kit.html#.GetOrderKits">GetOrderKits</a></li><li data-type='method'><a href="module-routes_kit.html#.GetUserKits">GetUserKits</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateKit">UpdateKit</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateKitState">UpdateKitState</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateMultipleKits">UpdateMultipleKits</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateShippingAddress">UpdateShippingAddress</a></li></ul></li><li><a href="module-routes_lock.html">routes/lock</a><ul class='methods'><li data-type='method'><a href="module-routes_lock.html#.ConfirmLockToken">ConfirmLockToken</a></li><li data-type='method'><a href="module-routes_lock.html#.GetLockLogs">GetLockLogs</a></li><li data-type='method'><a href="module-routes_lock.html#.GetLockStatus">GetLockStatus</a></li><li data-type='method'><a href="module-routes_lock.html#.SendLockCommand">SendLockCommand</a></li><li data-type='method'><a href="module-routes_lock.html#.StartLockTokenSession">StartLockTokenSession</a></li><li data-type='method'><a href="module-routes_lock.html#.ValidateLockToken">ValidateLockToken</a></li></ul></li><li><a href="module-routes_meeting.html">routes/meeting</a><ul class='methods'><li data-type='method'><a href="module-routes_meeting.html#.CancelMeeting">CancelMeeting</a></li><li data-type='method'><a href="module-routes_meeting.html#.CreateMeeting">CreateMeeting</a></li><li data-type='method'><a href="module-routes_meeting.html#.ExecuteTempLockCommand">ExecuteTempLockCommand</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetCancellationPage">GetCancellationPage</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetMeetingDetails">GetMeetingDetails</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetMeetingStats">GetMeetingStats</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetMeetings">GetMeetings</a></li><li data-type='method'><a href="module-routes_meeting.html#.HandleMeetingAction">HandleMeetingAction</a></li><li data-type='method'><a href="module-routes_meeting.html#.HandleMeetingCancellation">HandleMeetingCancellation</a></li><li data-type='method'><a href="module-routes_meeting.html#.RescheduleMeeting">RescheduleMeeting</a></li><li data-type='method'><a href="module-routes_meeting.html#.RetrieveMeetings">RetrieveMeetings</a></li><li data-type='method'><a href="module-routes_meeting.html#.UpdateMeeting">UpdateMeeting</a></li></ul></li><li><a href="module-routes_notification.html">routes/notification</a><ul class='methods'><li data-type='method'><a href="module-routes_notification.html#.SendConfirmationEmail">SendConfirmationEmail</a></li><li data-type='method'><a href="module-routes_notification.html#.SendConfirmationSMS">SendConfirmationSMS</a></li></ul></li><li><a href="module-routes_order.html">routes/order</a><ul class='methods'><li data-type='method'><a href="module-routes_order.html#.CreateOrder">CreateOrder</a></li><li data-type='method'><a href="module-routes_order.html#.DeleteAllOrders">DeleteAllOrders</a></li><li data-type='method'><a href="module-routes_order.html#.GetAllOrders">GetAllOrders</a></li><li data-type='method'><a href="module-routes_order.html#.GetOrderById">GetOrderById</a></li><li data-type='method'><a href="module-routes_order.html#.GetOrderItems">GetOrderItems</a></li><li data-type='method'><a href="module-routes_order.html#.GetSessionInfo">GetSessionInfo</a></li><li data-type='method'><a href="module-routes_order.html#.GetSubscriptionInfo">GetSubscriptionInfo</a></li><li data-type='method'><a href="module-routes_order.html#.GetUserOrders">GetUserOrders</a></li><li data-type='method'><a href="module-routes_order.html#.ListOrdersWithUserInfo">ListOrdersWithUserInfo</a></li><li data-type='method'><a href="module-routes_order.html#.UpdateOrderState">UpdateOrderState</a></li></ul></li><li><a href="module-routes_product.html">routes/product</a><ul class='methods'><li data-type='method'><a href="module-routes_product.html#.CreateProduct">CreateProduct</a></li><li data-type='method'><a href="module-routes_product.html#.GetProducts">GetProducts</a></li></ul></li><li><a href="module-routes_property.html">routes/property</a><ul class='methods'><li data-type='method'><a href="module-routes_property.html#.CustomSearchProperties">CustomSearchProperties</a></li><li data-type='method'><a href="module-routes_property.html#.GetPropertiesByUser">GetPropertiesByUser</a></li><li data-type='method'><a href="module-routes_property.html#.GetPropertyById">GetPropertyById</a></li><li data-type='method'><a href="module-routes_property.html#.ListAgentProperties">ListAgentProperties</a></li><li data-type='method'><a href="module-routes_property.html#.ListProperties">ListProperties</a></li><li data-type='method'><a href="module-routes_property.html#.PingProperty">PingProperty</a></li><li data-type='method'><a href="module-routes_property.html#.PingPropertySession">PingPropertySession</a></li><li data-type='method'><a href="module-routes_property.html#.PingPropertySessionById">PingPropertySessionById</a></li></ul></li><li><a href="module-routes_shipment.html">routes/shipment</a><ul class='methods'><li data-type='method'><a href="module-routes_shipment.html#.ConfirmShipmentDelivery">ConfirmShipmentDelivery</a></li><li data-type='method'><a href="module-routes_shipment.html#.CreateShipment">CreateShipment</a></li><li data-type='method'><a href="module-routes_shipment.html#.DeleteAllShipments">DeleteAllShipments</a></li><li data-type='method'><a href="module-routes_shipment.html#.GetShipmentById">GetShipmentById</a></li><li data-type='method'><a href="module-routes_shipment.html#.ListAllShipments">ListAllShipments</a></li><li data-type='method'><a href="module-routes_shipment.html#.ListUserShipments">ListUserShipments</a></li><li data-type='method'><a href="module-routes_shipment.html#.UpdateShipmentState">UpdateShipmentState</a></li></ul></li><li><a href="module-routes_subscription.html">routes/subscription</a><ul class='methods'><li data-type='method'><a href="module-routes_subscription.html#.CreateSubscription">CreateSubscription</a></li><li data-type='method'><a href="module-routes_subscription.html#.DeleteAllSubscriptions">DeleteAllSubscriptions</a></li><li data-type='method'><a href="module-routes_subscription.html#.EndTrial">EndTrial</a></li><li data-type='method'><a href="module-routes_subscription.html#.GetAllSubscriptions">GetAllSubscriptions</a></li><li data-type='method'><a href="module-routes_subscription.html#.GetSubscriptionByUserId">GetSubscriptionByUserId</a></li></ul></li><li><a href="module-routes_transactions.html">routes/transactions</a><ul class='methods'><li data-type='method'><a href="module-routes_transactions.html#.GetAllTransactions">GetAllTransactions</a></li><li data-type='method'><a href="module-routes_transactions.html#.GetTransactionById">GetTransactionById</a></li><li data-type='method'><a href="module-routes_transactions.html#.GetTransactionsByHardware">GetTransactionsByHardware</a></li><li data-type='method'><a href="module-routes_transactions.html#.GetTransactionsByProperty">GetTransactionsByProperty</a></li></ul></li><li><a href="module-routes_users.html">routes/users</a><ul class='methods'><li data-type='method'><a href="module-routes_users.html#.CreateAdmin">CreateAdmin</a></li><li data-type='method'><a href="module-routes_users.html#.CreateAgent">CreateAgent</a></li><li data-type='method'><a href="module-routes_users.html#.DeleteAdmin">DeleteAdmin</a></li><li data-type='method'><a href="module-routes_users.html#.ForgotPassword">ForgotPassword</a></li><li data-type='method'><a href="module-routes_users.html#.GetAdmin">GetAdmin</a></li><li data-type='method'><a href="module-routes_users.html#.GetAdminAccountList">GetAdminAccountList</a></li><li data-type='method'><a href="module-routes_users.html#.GetAdminList">GetAdminList</a></li><li data-type='method'><a href="module-routes_users.html#.GetOrgs">GetOrgs</a></li><li data-type='method'><a href="module-routes_users.html#.GetStripe">GetStripe</a></li><li data-type='method'><a href="module-routes_users.html#.GetTimezone">GetTimezone</a></li><li data-type='method'><a href="module-routes_users.html#.GetUser">GetUser</a></li><li data-type='method'><a href="module-routes_users.html#.Login">Login</a></li><li data-type='method'><a href="module-routes_users.html#.Logout">Logout</a></li><li data-type='method'><a href="module-routes_users.html#.Register">Register</a></li><li data-type='method'><a href="module-routes_users.html#.RequestCode">RequestCode</a></li><li data-type='method'><a href="module-routes_users.html#.ResetPassword">ResetPassword</a></li><li data-type='method'><a href="module-routes_users.html#.ResetUserPassword">ResetUserPassword</a></li><li data-type='method'><a href="module-routes_users.html#.SuperadminRegister">SuperadminRegister</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateAgent">UpdateAgent</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateProfile">UpdateProfile</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateSettings">UpdateSettings</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateUser">UpdateUser</a></li></ul></li><li><a href="module-routes_webhook.html">routes/webhook</a></li></ul><h3>Events</h3><ul><li><a href="module-routes_contactVerified.html#~event:CVWaitList">CVWaitList</a></li><li><a href="module-routes_contactVerified.html#~event:cleanupCVWaitList">cleanupCVWaitList</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">routes/hardware</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description usertext">Hardware Routes ModuleThis module handles routes related to hardware management, including camera streaming, QR code generation,session management, and hardware CRUD operations.</div>
+            
+
+            
+                
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Hardware Routes ModuleThis module handles routes related to hardware management, including camera streaming, QR code generation,session management, and hardware CRUD operations.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".delete/:id"><span class="type-signature type-signature-static">(static) </span>delete/:id<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to delete existing hardware.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line541">line 541</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".get/:id/admin/sync"><span class="type-signature type-signature-static">(static) </span>get/:id/admin/sync<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to sync hardware with admin privileges.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line581">line 581</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".get/:id/stream"><span class="type-signature type-signature-static">(static) </span>get/:id/stream<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to get the stream URL for a specific hardware ID.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".get/:id?"><span class="type-signature type-signature-static">(static) </span>get/:id?<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to get or list all hardware.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line406">line 406</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".get/list/cameras"><span class="type-signature type-signature-static">(static) </span>get/list/cameras<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to list all active cameras for the user.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line379">line 379</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".get/session/:property/:uid/agent"><span class="type-signature type-signature-static">(static) </span>get/session/:property/:uid/agent<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to manage tablet sessions for a property agent.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line331">line 331</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".get/session/:property/:uid/manager"><span class="type-signature type-signature-static">(static) </span>get/session/:property/:uid/manager<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to manage tablet sessions for a property manager.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line243">line 243</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".post/"><span class="type-signature type-signature-static">(static) </span>post/<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to create new hardware.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line442">line 442</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".post/:id"><span class="type-signature type-signature-static">(static) </span>post/:id<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to update existing hardware.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line506">line 506</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".post/:id/stream/test"><span class="type-signature type-signature-static">(static) </span>post/:id/stream/test<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to test camera streaming for a specific hardware ID.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line28">line 28</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".post/admin/buzzer"><span class="type-signature type-signature-static">(static) </span>post/admin/buzzer<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to handle buzzer notifications.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line642">line 642</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".post/admin/sync"><span class="type-signature type-signature-static">(static) </span>post/admin/sync<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to sync hardware via admin.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line616">line 616</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".post/app/ping"><span class="type-signature type-signature-static">(static) </span>post/app/ping<span class="signature">(req, res)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to ping hardware with app token.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line692">line 692</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".post/bulk"><span class="type-signature type-signature-static">(static) </span>post/bulk<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Route to create hardware in bulk.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line474">line 474</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~generateStreamUrl"><span class="type-signature type-signature-inner">(inner) </span>generateStreamUrl<span class="signature">(req, res, next)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Generates a stream URL for a specific hardware.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line159">line 159</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>req</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express request object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>res</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express response object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Express next middleware function.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~sendPN"><span class="type-signature type-signature-inner">(inner) </span>sendPN<span class="signature">(title, body, url, token)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Sends push notification.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_hardware.js.html">routes/hardware.js</a>, <a href="routes_hardware.js.html#line739">line 739</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>title</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Notification title.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>body</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Notification body.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Notification URL.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Device token.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Jun 18 2024 16:15:44 GMT-0700 (北美太平洋夏令时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="Controller_lock_index.module_js.html">js</a><ul class='methods'><li data-type='method'><a href="Controller_lock_index.module_js.html#~generateSign">generateSign</a></li><li data-type='method'><a href="Controller_lock_index.module_js.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="Controller_lock_index.module_js.html#~getLogs">getLogs</a></li><li data-type='method'><a href="Controller_lock_index.module_js.html#~getStatus">getStatus</a></li><li data-type='method'><a href="Controller_lock_index.module_js.html#~sendCommand">sendCommand</a></li><li data-type='method'><a href="Controller_lock_index.module_js.html#~toggleLock">toggleLock</a></li></ul></li><li><a href="Controller_lock_switchbot.module_js.html">js</a><ul class='methods'><li data-type='method'><a href="Controller_lock_switchbot.module_js.html#~generateSign">generateSign</a></li><li data-type='method'><a href="Controller_lock_switchbot.module_js.html#~getDevices">getDevices</a></li><li data-type='method'><a href="Controller_lock_switchbot.module_js.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="Controller_lock_switchbot.module_js.html#~sendCommand">sendCommand</a></li></ul></li><li><a href="module-Controller_Schedule.html">Controller/Schedule</a><ul class='methods'><li data-type='method'><a href="module-Controller_Schedule.html#~calibrateTimezone">calibrateTimezone</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~cleanupCVWaitList">cleanupCVWaitList</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~cleanupDropin">cleanupDropin</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~downloadIDImages">downloadIDImages</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~followUp">followUp</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~generateInvoices">generateInvoices</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~scheduleNextRun">scheduleNextRun</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~sendNotifications">sendNotifications</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~sendPN">sendPN</a></li></ul></li><li><a href="module-Controller_authentication.html">Controller/authentication</a></li><li><a href="module-Controller_button.html">Controller/button</a><ul class='methods'><li data-type='method'><a href="module-Controller_button.html#~statusButoon">statusButoon</a></li></ul></li><li><a href="module-Controller_camera.html">Controller/camera</a><ul class='methods'><li data-type='method'><a href="module-Controller_camera.html#~countRecords">countRecords</a></li><li data-type='method'><a href="module-Controller_camera.html#~createCameraZone">createCameraZone</a></li><li data-type='method'><a href="module-Controller_camera.html#~createNewCamera">createNewCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~editCamera">editCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~enableCamera">enableCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~generateStreamURL">generateStreamURL</a></li><li data-type='method'><a href="module-Controller_camera.html#~getKinesesStreamingUrl">getKinesesStreamingUrl</a></li><li data-type='method'><a href="module-Controller_camera.html#~getNextMonitorId">getNextMonitorId</a></li><li data-type='method'><a href="module-Controller_camera.html#~getRecords">getRecords</a></li><li data-type='method'><a href="module-Controller_camera.html#~getToken">getToken</a></li><li data-type='method'><a href="module-Controller_camera.html#~pad">pad</a></li><li data-type='method'><a href="module-Controller_camera.html#~refreshToken">refreshToken</a></li><li data-type='method'><a href="module-Controller_camera.html#~reloadCameraStreams">reloadCameraStreams</a></li><li data-type='method'><a href="module-Controller_camera.html#~removeCamera">removeCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~triggerCameraStreams">triggerCameraStreams</a></li></ul></li><li><a href="module-Controller_contact.html">Controller/contact</a><ul class='methods'><li data-type='method'><a href="module-Controller_contact.html#~convertJsonToCsv">convertJsonToCsv</a></li><li data-type='method'><a href="module-Controller_contact.html#~getById">getById</a></li><li data-type='method'><a href="module-Controller_contact.html#~getContact">getContact</a></li><li data-type='method'><a href="module-Controller_contact.html#~getContactSub">getContactSub</a></li><li data-type='method'><a href="module-Controller_contact.html#~getUpdate">getUpdate</a></li><li data-type='method'><a href="module-Controller_contact.html#~toCsv">toCsv</a></li><li data-type='method'><a href="module-Controller_contact.html#~updateContactSub">updateContactSub</a></li><li data-type='method'><a href="module-Controller_contact.html#~validateIdLoad">validateIdLoad</a></li></ul></li><li><a href="module-Controller_dashboard.html">Controller/dashboard</a><ul class='methods'><li data-type='method'><a href="module-Controller_dashboard.html#~getDashboardStats">getDashboardStats</a></li></ul></li><li><a href="module-Controller_invoices.html">Controller/invoices</a><ul class='methods'><li data-type='method'><a href="module-Controller_invoices.html#~createInvoice">createInvoice</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoices">viewInvoices</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoicesById">viewInvoicesById</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoicesByUser">viewInvoicesByUser</a></li></ul></li><li><a href="module-Controller_keypad.html">Controller/keypad</a><ul class='methods'><li data-type='method'><a href="module-Controller_keypad.html#~createPasscode">createPasscode</a></li><li data-type='method'><a href="module-Controller_keypad.html#~deletePasscode">deletePasscode</a></li><li data-type='method'><a href="module-Controller_keypad.html#~listPasscodes">listPasscodes</a></li></ul></li><li><a href="module-Controller_meeting.html">Controller/meeting</a><ul class='methods'><li data-type='method'><a href="module-Controller_meeting.html#~meetingStats">meetingStats</a></li><li data-type='method'><a href="module-Controller_meeting.html#~sendTempCommand">sendTempCommand</a></li></ul></li><li><a href="module-Controller_notification.html">Controller/notification</a><ul class='methods'><li data-type='method'><a href="module-Controller_notification.html#~sendConfirmationEmail">sendConfirmationEmail</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendConfirmationSMS">sendConfirmationSMS</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendEmail">sendEmail</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendSms">sendSms</a></li></ul></li><li><a href="module-Controller_order.html">Controller/order</a><ul class='methods'><li data-type='method'><a href="module-Controller_order.html#~createAndNotify">createAndNotify</a></li><li data-type='method'><a href="module-Controller_order.html#~formatOrderDetails">formatOrderDetails</a></li><li data-type='method'><a href="module-Controller_order.html#~formatUserDetails">formatUserDetails</a></li><li data-type='method'><a href="module-Controller_order.html#~updateAndNotify">updateAndNotify</a></li></ul></li><li><a href="module-Controller_property.html">Controller/property</a><ul class='methods'><li data-type='method'><a href="module-Controller_property.html#~assignPropertyToUser">assignPropertyToUser</a></li><li data-type='method'><a href="module-Controller_property.html#~calcAvailability">calcAvailability</a></li><li data-type='method'><a href="module-Controller_property.html#~calcMonthAvailability">calcMonthAvailability</a></li><li data-type='method'><a href="module-Controller_property.html#~cloneProperty">cloneProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~getSinglePublicProperty">getSinglePublicProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~makeBook">makeBook</a></li><li data-type='method'><a href="module-Controller_property.html#~newProperty">newProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~propertiesPublic">propertiesPublic</a></li><li data-type='method'><a href="module-Controller_property.html#~propertiesUser">propertiesUser</a></li><li data-type='method'><a href="module-Controller_property.html#~property">property</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyAssignList">propertyAssignList</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyList">propertyList</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyListCustomSearch">propertyListCustomSearch</a></li><li data-type='method'><a href="module-Controller_property.html#~updateProperty">updateProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~updatePropertyKit">updatePropertyKit</a></li></ul></li><li><a href="module-Controller_shipment.html">Controller/shipment</a><ul class='methods'><li data-type='method'><a href="module-Controller_shipment.html#~formattedShipment">formattedShipment</a></li><li data-type='method'><a href="module-Controller_shipment.html#~sendShipmentNotification">sendShipmentNotification</a></li></ul></li><li><a href="module-Controller_transactions.html">Controller/transactions</a><ul class='methods'><li data-type='method'><a href="module-Controller_transactions.html#~createTransaction">createTransaction</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionByHardware">viewTransactionByHardware</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionById">viewTransactionById</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionByProperty">viewTransactionByProperty</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactions">viewTransactions</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#confirm">confirm</a></li><li><a href="global.html#getLogs">getLogs</a></li><li><a href="global.html#lockStatus">lockStatus</a></li><li><a href="global.html#sendCommand">sendCommand</a></li><li><a href="global.html#session">session</a></li><li><a href="global.html#validate">validate</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">js</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Handles authentication logic.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lock_switchbot.js.html">lock/switchbot.js</a>, <a href="lock_switchbot.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+            
+                <div class="description usertext">Handles authentication logic.</div>
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="~generateSign"><span class="type-signature type-signature-inner">(inner) </span>generateSign<span class="signature">(param0)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Generates a sign for authentication.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lock_switchbot.js.html">lock/switchbot.js</a>, <a href="lock_switchbot.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param0</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The object containing token, secret, t, and nonce.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    The generated sign.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~getDevices"><span class="type-signature type-signature-inner">(inner) </span>getDevices<span class="signature">(type, auth)</span><span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;Object>>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Retrieves devices based on type.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lock_switchbot.js.html">lock/switchbot.js</a>, <a href="lock_switchbot.js.html#line93">line 93</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The type of device to retrieve ('lock', 'keypad', 'button', 'hub', or 'all').</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>auth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The authentication object containing token, secret, t, and nonce.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    A promise resolving to an array of devices.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Array.&lt;Object>></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~getDevicesStatus"><span class="type-signature type-signature-inner">(inner) </span>getDevicesStatus<span class="signature">(deviceId, auth)</span><span class="type-signature"> &rarr; {Promise.&lt;Object>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Retrieves the status of a device.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lock_switchbot.js.html">lock/switchbot.js</a>, <a href="lock_switchbot.js.html#line152">line 152</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The ID of the device.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>auth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The authentication object containing token, secret, t, and nonce.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    A promise resolving to the device status.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Object></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="~sendCommand"><span class="type-signature type-signature-inner">(inner) </span>sendCommand<span class="signature">(deviceId, command, auth)</span><span class="type-signature"> &rarr; {Promise.&lt;Object>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Sends a command to a device.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lock_switchbot.js.html">lock/switchbot.js</a>, <a href="lock_switchbot.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The ID of the device.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>command</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The command to send (e.g., 'lock', 'unlock').</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>auth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The authentication object containing token, secret, t, and nonce.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    A promise resolving to the API response.
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Object></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Jun 18 2024 11:16:14 GMT-0700 (北美太平洋夏令时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

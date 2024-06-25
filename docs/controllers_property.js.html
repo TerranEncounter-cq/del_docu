@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>controllers/property.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BadRequest.html">BadRequest</a></li><li><a href="Forbidden.html">Forbidden</a></li><li><a href="NotFound.html">NotFound</a></li><li><a href="Unauthorized.html">Unauthorized</a></li></ul><h3>Modules</h3><ul><li><a href="module-Controller_Schedule.html">Controller/Schedule</a><ul class='methods'><li data-type='method'><a href="module-Controller_Schedule.html#~calibrateTimezone">calibrateTimezone</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~cleanupCVWaitList">cleanupCVWaitList</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~cleanupDropin">cleanupDropin</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~downloadIDImages">downloadIDImages</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~followUp">followUp</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~generateInvoices">generateInvoices</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~scheduleNextRun">scheduleNextRun</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~sendNotifications">sendNotifications</a></li><li data-type='method'><a href="module-Controller_Schedule.html#~sendPN">sendPN</a></li></ul></li><li><a href="module-Controller_authentication.html">Controller/authentication</a></li><li><a href="module-Controller_button.html">Controller/button</a><ul class='methods'><li data-type='method'><a href="module-Controller_button.html#~statusButoon">statusButoon</a></li></ul></li><li><a href="module-Controller_camera.html">Controller/camera</a><ul class='methods'><li data-type='method'><a href="module-Controller_camera.html#~countRecords">countRecords</a></li><li data-type='method'><a href="module-Controller_camera.html#~createCameraZone">createCameraZone</a></li><li data-type='method'><a href="module-Controller_camera.html#~createNewCamera">createNewCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~editCamera">editCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~enableCamera">enableCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~generateStreamURL">generateStreamURL</a></li><li data-type='method'><a href="module-Controller_camera.html#~getKinesesStreamingUrl">getKinesesStreamingUrl</a></li><li data-type='method'><a href="module-Controller_camera.html#~getNextMonitorId">getNextMonitorId</a></li><li data-type='method'><a href="module-Controller_camera.html#~getRecords">getRecords</a></li><li data-type='method'><a href="module-Controller_camera.html#~getToken">getToken</a></li><li data-type='method'><a href="module-Controller_camera.html#~pad">pad</a></li><li data-type='method'><a href="module-Controller_camera.html#~refreshToken">refreshToken</a></li><li data-type='method'><a href="module-Controller_camera.html#~reloadCameraStreams">reloadCameraStreams</a></li><li data-type='method'><a href="module-Controller_camera.html#~removeCamera">removeCamera</a></li><li data-type='method'><a href="module-Controller_camera.html#~triggerCameraStreams">triggerCameraStreams</a></li></ul></li><li><a href="module-Controller_contact.html">Controller/contact</a><ul class='methods'><li data-type='method'><a href="module-Controller_contact.html#~convertJsonToCsv">convertJsonToCsv</a></li><li data-type='method'><a href="module-Controller_contact.html#~getById">getById</a></li><li data-type='method'><a href="module-Controller_contact.html#~getContact">getContact</a></li><li data-type='method'><a href="module-Controller_contact.html#~getContactSub">getContactSub</a></li><li data-type='method'><a href="module-Controller_contact.html#~getUpdate">getUpdate</a></li><li data-type='method'><a href="module-Controller_contact.html#~toCsv">toCsv</a></li><li data-type='method'><a href="module-Controller_contact.html#~updateContactSub">updateContactSub</a></li><li data-type='method'><a href="module-Controller_contact.html#~validateIdLoad">validateIdLoad</a></li></ul></li><li><a href="module-Controller_dashboard.html">Controller/dashboard</a><ul class='methods'><li data-type='method'><a href="module-Controller_dashboard.html#~getDashboardStats">getDashboardStats</a></li></ul></li><li><a href="module-Controller_invoices.html">Controller/invoices</a><ul class='methods'><li data-type='method'><a href="module-Controller_invoices.html#~createInvoice">createInvoice</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoices">viewInvoices</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoicesById">viewInvoicesById</a></li><li data-type='method'><a href="module-Controller_invoices.html#~viewInvoicesByUser">viewInvoicesByUser</a></li></ul></li><li><a href="module-Controller_keypad.html">Controller/keypad</a><ul class='methods'><li data-type='method'><a href="module-Controller_keypad.html#~createPasscode">createPasscode</a></li><li data-type='method'><a href="module-Controller_keypad.html#~deletePasscode">deletePasscode</a></li><li data-type='method'><a href="module-Controller_keypad.html#~listPasscodes">listPasscodes</a></li></ul></li><li><a href="module-Controller_lock_august_index.html">Controller/lock/august/index</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_august_index.html#~getLogs">getLogs</a></li><li data-type='method'><a href="module-Controller_lock_august_index.html#~lockStatus">lockStatus</a></li><li data-type='method'><a href="module-Controller_lock_august_index.html#~sendCommand">sendCommand</a></li></ul></li><li><a href="module-Controller_lock_august_token.html">Controller/lock/august/token</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_august_token.html#~confirm">confirm</a></li><li data-type='method'><a href="module-Controller_lock_august_token.html#~session">session</a></li><li data-type='method'><a href="module-Controller_lock_august_token.html#~validate">validate</a></li></ul></li><li><a href="module-Controller_lock_index.html">Controller/lock/index</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_index.html#~generateSign">generateSign</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~getLogs">getLogs</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~getStatus">getStatus</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~sendCommand">sendCommand</a></li><li data-type='method'><a href="module-Controller_lock_index.html#~toggleLock">toggleLock</a></li></ul></li><li><a href="module-Controller_lock_switchbot.html">Controller/lock/switchbot</a><ul class='methods'><li data-type='method'><a href="module-Controller_lock_switchbot.html#~generateSign">generateSign</a></li><li data-type='method'><a href="module-Controller_lock_switchbot.html#~getDevices">getDevices</a></li><li data-type='method'><a href="module-Controller_lock_switchbot.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="module-Controller_lock_switchbot.html#~sendCommand">sendCommand</a></li></ul></li><li><a href="module-Controller_meeting.html">Controller/meeting</a><ul class='methods'><li data-type='method'><a href="module-Controller_meeting.html#~meetingStats">meetingStats</a></li><li data-type='method'><a href="module-Controller_meeting.html#~sendTempCommand">sendTempCommand</a></li></ul></li><li><a href="module-Controller_notification.html">Controller/notification</a><ul class='methods'><li data-type='method'><a href="module-Controller_notification.html#~sendConfirmationEmail">sendConfirmationEmail</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendConfirmationSMS">sendConfirmationSMS</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendEmail">sendEmail</a></li><li data-type='method'><a href="module-Controller_notification.html#~sendSms">sendSms</a></li></ul></li><li><a href="module-Controller_order.html">Controller/order</a><ul class='methods'><li data-type='method'><a href="module-Controller_order.html#~createAndNotify">createAndNotify</a></li><li data-type='method'><a href="module-Controller_order.html#~formatOrderDetails">formatOrderDetails</a></li><li data-type='method'><a href="module-Controller_order.html#~formatUserDetails">formatUserDetails</a></li><li data-type='method'><a href="module-Controller_order.html#~updateAndNotify">updateAndNotify</a></li></ul></li><li><a href="module-Controller_property.html">Controller/property</a><ul class='methods'><li data-type='method'><a href="module-Controller_property.html#~assignPropertyToUser">assignPropertyToUser</a></li><li data-type='method'><a href="module-Controller_property.html#~calcAvailability">calcAvailability</a></li><li data-type='method'><a href="module-Controller_property.html#~calcMonthAvailability">calcMonthAvailability</a></li><li data-type='method'><a href="module-Controller_property.html#~cloneProperty">cloneProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~getSinglePublicProperty">getSinglePublicProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~makeBook">makeBook</a></li><li data-type='method'><a href="module-Controller_property.html#~newProperty">newProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~propertiesPublic">propertiesPublic</a></li><li data-type='method'><a href="module-Controller_property.html#~propertiesUser">propertiesUser</a></li><li data-type='method'><a href="module-Controller_property.html#~property">property</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyAssignList">propertyAssignList</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyList">propertyList</a></li><li data-type='method'><a href="module-Controller_property.html#~propertyListCustomSearch">propertyListCustomSearch</a></li><li data-type='method'><a href="module-Controller_property.html#~updateProperty">updateProperty</a></li><li data-type='method'><a href="module-Controller_property.html#~updatePropertyKit">updatePropertyKit</a></li></ul></li><li><a href="module-Controller_shipment.html">Controller/shipment</a><ul class='methods'><li data-type='method'><a href="module-Controller_shipment.html#~formattedShipment">formattedShipment</a></li><li data-type='method'><a href="module-Controller_shipment.html#~sendShipmentNotification">sendShipmentNotification</a></li></ul></li><li><a href="module-Controller_transactions.html">Controller/transactions</a><ul class='methods'><li data-type='method'><a href="module-Controller_transactions.html#~createTransaction">createTransaction</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionByHardware">viewTransactionByHardware</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionById">viewTransactionById</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactionByProperty">viewTransactionByProperty</a></li><li data-type='method'><a href="module-Controller_transactions.html#~viewTransactions">viewTransactions</a></li></ul></li><li><a href="module-constants_cognito.html">constants/cognito</a></li><li><a href="module-constants_index.html">constants/index</a></li><li><a href="module-controllers_notifications.html">controllers/notifications</a><ul class='methods'><li data-type='method'><a href="module-controllers_notifications.html#~sendInstructions">sendInstructions</a></li><li data-type='method'><a href="module-controllers_notifications.html#~sendReminder">sendReminder</a></li></ul></li><li><a href="module-controllers_property.html">controllers/property</a><ul class='methods'><li data-type='method'><a href="module-controllers_property.html#~associateKit">associateKit</a></li></ul></li><li><a href="module-events_emitter.html">events/emitter</a></li><li><a href="module-helpers_account.html">helpers/account</a><ul class='methods'><li data-type='method'><a href="module-helpers_account.html#~addHardware">addHardware</a></li><li data-type='method'><a href="module-helpers_account.html#~addSwitchBotHardware">addSwitchBotHardware</a></li></ul></li><li><a href="module-helpers_aws-s3.html">helpers/aws-s3</a><ul class='methods'><li data-type='method'><a href="module-helpers_aws-s3.html#.getFileExtensionFromBase64">getFileExtensionFromBase64</a></li><li data-type='method'><a href="module-helpers_aws-s3.html#.uploadS3">uploadS3</a></li></ul></li><li><a href="module-helpers_button.html">helpers/button</a><ul class='methods'><li data-type='method'><a href="module-helpers_button.html#~actuateButton">actuateButton</a></li></ul></li><li><a href="module-helpers_calendar.html">helpers/calendar</a><ul class='methods'><li data-type='method'><a href="module-helpers_calendar.html#~dateTimeForCalander">dateTimeForCalander</a></li><li data-type='method'><a href="module-helpers_calendar.html#~deleteEvent">deleteEvent</a></li><li data-type='method'><a href="module-helpers_calendar.html#~getEvents">getEvents</a></li><li data-type='method'><a href="module-helpers_calendar.html#~insertEvent">insertEvent</a></li></ul></li><li><a href="module-helpers_camera.html">helpers/camera</a><ul class='methods'><li data-type='method'><a href="module-helpers_camera.html#~streamToBuffer">streamToBuffer</a></li></ul></li><li><a href="module-helpers_cognito.html">helpers/cognito</a><ul class='methods'><li data-type='method'><a href="module-helpers_cognito.html#~assignUserToGroup">assignUserToGroup</a></li><li data-type='method'><a href="module-helpers_cognito.html#~cognitoSignUp">cognitoSignUp</a></li><li data-type='method'><a href="module-helpers_cognito.html#~deleteUserFromCognito">deleteUserFromCognito</a></li><li data-type='method'><a href="module-helpers_cognito.html#~getSingleCognitoUser">getSingleCognitoUser</a></li><li data-type='method'><a href="module-helpers_cognito.html#~setPermanentUserPassword">setPermanentUserPassword</a></li><li data-type='method'><a href="module-helpers_cognito.html#~signInCognito">signInCognito</a></li><li data-type='method'><a href="module-helpers_cognito.html#~verifyHeaders">verifyHeaders</a></li><li data-type='method'><a href="module-helpers_cognito.html#~verifyToken">verifyToken</a></li></ul></li><li><a href="module-helpers_emailGeneration.html">helpers/emailGeneration</a><ul class='methods'><li data-type='method'><a href="module-helpers_emailGeneration.html#~formatDateToGoogleCalendar">formatDateToGoogleCalendar</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~formattingTime">formattingTime</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateBookingConfirmationEmail">generateBookingConfirmationEmail</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateGoogleCalendarUrl">generateGoogleCalendarUrl</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateInstructionsEmail">generateInstructionsEmail</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~generateReminderEmail">generateReminderEmail</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~insertInEmailLayout">insertInEmailLayout</a></li><li data-type='method'><a href="module-helpers_emailGeneration.html#~urlEncode">urlEncode</a></li></ul></li><li><a href="module-helpers_keypad.html">helpers/keypad</a><ul class='methods'><li data-type='method'><a href="module-helpers_keypad.html#~passcodeList">passcodeList</a></li></ul></li><li><a href="module-helpers_kit.html">helpers/kit</a><ul class='methods'><li data-type='method'><a href="module-helpers_kit.html#~associateHardware">associateHardware</a></li><li data-type='method'><a href="module-helpers_kit.html#~closeKitToUser">closeKitToUser</a></li><li data-type='method'><a href="module-helpers_kit.html#~registerKitToUser">registerKitToUser</a></li></ul></li><li><a href="module-helpers_switchbot.html">helpers/switchbot</a><ul class='methods'><li data-type='method'><a href="module-helpers_switchbot.html#~generateSign">generateSign</a></li><li data-type='method'><a href="module-helpers_switchbot.html#~getDevices">getDevices</a></li><li data-type='method'><a href="module-helpers_switchbot.html#~getDevicesStatus">getDevicesStatus</a></li><li data-type='method'><a href="module-helpers_switchbot.html#~sendCommand">sendCommand</a></li></ul></li><li><a href="module-helpers_utilities.html">helpers/utilities</a><ul class='methods'><li data-type='method'><a href="module-helpers_utilities.html#~downloadImage">downloadImage</a></li><li data-type='method'><a href="module-helpers_utilities.html#~relativeTimeConversion">relativeTimeConversion</a></li><li data-type='method'><a href="module-helpers_utilities.html#~splitTags">splitTags</a></li></ul></li><li><a href="module-middleware_adminRole.html">middleware/adminRole</a><ul class='methods'><li data-type='method'><a href="module-middleware_adminRole.html#~adminRole">adminRole</a></li></ul></li><li><a href="module-middleware_authMiddleware.html">middleware/authMiddleware</a><ul class='methods'><li data-type='method'><a href="module-middleware_authMiddleware.html#~authMiddleware">authMiddleware</a></li></ul></li><li><a href="module-middleware_errorHandler.html">middleware/errorHandler</a><ul class='methods'><li data-type='method'><a href="module-middleware_errorHandler.html#~errorHandler">errorHandler</a></li></ul></li><li><a href="module-models_account.html">models/account</a></li><li><a href="module-models_action.html">models/action</a></li><li><a href="module-models_building.html">models/building</a></li><li><a href="module-models_confirmationCode.html">models/confirmationCode</a></li><li><a href="module-models_contact.html">models/contact</a></li><li><a href="module-models_discount.html">models/discount</a></li><li><a href="module-models_hardware.html">models/hardware</a></li><li><a href="module-models_invoice.html">models/invoice</a></li><li><a href="module-models_invoiceInfo.html">models/invoiceInfo</a></li><li><a href="module-models_kit.html">models/kit</a></li><li><a href="module-models_meeting.html">models/meeting</a></li><li><a href="module-models_order.html">models/order</a></li><li><a href="module-models_paymentMethod.html">models/paymentMethod</a></li><li><a href="module-models_product.html">models/product</a></li><li><a href="module-models_property.html">models/property</a></li><li><a href="module-models_settings.html">models/settings</a></li><li><a href="module-models_shipment.html">models/shipment</a></li><li><a href="module-models_subscription.html">models/subscription</a></li><li><a href="module-models_transaction.html">models/transaction</a></li><li><a href="module-models_user.html">models/user</a></li><li><a href="module-routes_account.html">routes/account</a></li><li><a href="module-routes_agents.html">routes/agents</a></li><li><a href="module-routes_button.html">routes/button</a></li><li><a href="module-routes_camera.html">routes/camera</a></li><li><a href="module-routes_contact.html">routes/contact</a><ul class='methods'><li data-type='method'><a href="module-routes_contact.html#.get/">get/</a></li><li data-type='method'><a href="module-routes_contact.html#.get/:id?">get/:id?</a></li><li data-type='method'><a href="module-routes_contact.html#.get/toCsv">get/toCsv</a></li><li data-type='method'><a href="module-routes_contact.html#.post/validateid/load">post/validateid/load</a></li><li data-type='method'><a href="module-routes_contact.html#.put/update/:id?">put/update/:id?</a></li><li data-type='method'><a href="module-routes_contact.html#.subscription/:id">subscription/:id</a></li></ul></li><li><a href="module-routes_contactVerified.html">routes/contactVerified</a></li><li><a href="module-routes_dashboard.html">routes/dashboard</a></li><li><a href="module-routes_discount.html">routes/discount</a><ul class='methods'><li data-type='method'><a href="module-routes_discount.html#.get/">get/</a></li><li data-type='method'><a href="module-routes_discount.html#.get/:code">get/:code</a></li><li data-type='method'><a href="module-routes_discount.html#.get/generate-code">get/generate-code</a></li><li data-type='method'><a href="module-routes_discount.html#.post/">post/</a></li></ul></li><li><a href="module-routes_documents.html">routes/documents</a></li><li><a href="module-routes_hardware.html">routes/hardware</a><ul class='methods'><li data-type='method'><a href="module-routes_hardware.html#.delete/:id">delete/:id</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/:id/admin/sync">get/:id/admin/sync</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/:id/stream">get/:id/stream</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/:id?">get/:id?</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/list/cameras">get/list/cameras</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/session/:property/:uid/agent">get/session/:property/:uid/agent</a></li><li data-type='method'><a href="module-routes_hardware.html#.get/session/:property/:uid/manager">get/session/:property/:uid/manager</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/">post/</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/:id">post/:id</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/:id/stream/test">post/:id/stream/test</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/admin/buzzer">post/admin/buzzer</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/admin/sync">post/admin/sync</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/app/ping">post/app/ping</a></li><li data-type='method'><a href="module-routes_hardware.html#.post/bulk">post/bulk</a></li><li data-type='method'><a href="module-routes_hardware.html#~generateStreamUrl">generateStreamUrl</a></li><li data-type='method'><a href="module-routes_hardware.html#~sendPN">sendPN</a></li></ul></li><li><a href="module-routes_index.html">routes/index</a><ul class='methods'><li data-type='method'><a href="module-routes_index.html#.get/logout">get/logout</a></li><li data-type='method'><a href="module-routes_index.html#.use/admin">use/admin</a></li><li data-type='method'><a href="module-routes_index.html#.use/public">use/public</a></li><li data-type='method'><a href="module-routes_index.html#.use/public/images/contact">use/public/images/contact</a></li><li data-type='method'><a href="module-routes_index.html#.use/public/images/property">use/public/images/property</a></li></ul></li><li><a href="module-routes_invoice.html">routes/invoice</a></li><li><a href="module-routes_invoiceInfo.html">routes/invoiceInfo</a><ul class='methods'><li data-type='method'><a href="module-routes_invoiceInfo.html#.CreateInvoiceInfo">CreateInvoiceInfo</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.DeleteInvoiceInfo">DeleteInvoiceInfo</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.GetInvoiceInfo">GetInvoiceInfo</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.GetInvoiceInfoAdmin">GetInvoiceInfoAdmin</a></li><li data-type='method'><a href="module-routes_invoiceInfo.html#.UpdateInvoiceInfo">UpdateInvoiceInfo</a></li></ul></li><li><a href="module-routes_keypad.html">routes/keypad</a><ul class='methods'><li data-type='method'><a href="module-routes_keypad.html#.PasscodeRoutes">PasscodeRoutes</a></li></ul></li><li><a href="module-routes_kit.html">routes/kit</a><ul class='methods'><li data-type='method'><a href="module-routes_kit.html#.ConfirmKit">ConfirmKit</a></li><li data-type='method'><a href="module-routes_kit.html#.CreateKit">CreateKit</a></li><li data-type='method'><a href="module-routes_kit.html#.DeleteKit">DeleteKit</a></li><li data-type='method'><a href="module-routes_kit.html#.GetAllKits">GetAllKits</a></li><li data-type='method'><a href="module-routes_kit.html#.GetKitById">GetKitById</a></li><li data-type='method'><a href="module-routes_kit.html#.GetOrderKits">GetOrderKits</a></li><li data-type='method'><a href="module-routes_kit.html#.GetOrderKits">GetOrderKits</a></li><li data-type='method'><a href="module-routes_kit.html#.GetUserKits">GetUserKits</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateKit">UpdateKit</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateKitState">UpdateKitState</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateMultipleKits">UpdateMultipleKits</a></li><li data-type='method'><a href="module-routes_kit.html#.UpdateShippingAddress">UpdateShippingAddress</a></li></ul></li><li><a href="module-routes_lock.html">routes/lock</a><ul class='methods'><li data-type='method'><a href="module-routes_lock.html#.ConfirmLockToken">ConfirmLockToken</a></li><li data-type='method'><a href="module-routes_lock.html#.GetLockLogs">GetLockLogs</a></li><li data-type='method'><a href="module-routes_lock.html#.GetLockStatus">GetLockStatus</a></li><li data-type='method'><a href="module-routes_lock.html#.SendLockCommand">SendLockCommand</a></li><li data-type='method'><a href="module-routes_lock.html#.StartLockTokenSession">StartLockTokenSession</a></li><li data-type='method'><a href="module-routes_lock.html#.ValidateLockToken">ValidateLockToken</a></li></ul></li><li><a href="module-routes_meeting.html">routes/meeting</a><ul class='methods'><li data-type='method'><a href="module-routes_meeting.html#.CancelMeeting">CancelMeeting</a></li><li data-type='method'><a href="module-routes_meeting.html#.CreateMeeting">CreateMeeting</a></li><li data-type='method'><a href="module-routes_meeting.html#.ExecuteTempLockCommand">ExecuteTempLockCommand</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetCancellationPage">GetCancellationPage</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetMeetingDetails">GetMeetingDetails</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetMeetingStats">GetMeetingStats</a></li><li data-type='method'><a href="module-routes_meeting.html#.GetMeetings">GetMeetings</a></li><li data-type='method'><a href="module-routes_meeting.html#.HandleMeetingAction">HandleMeetingAction</a></li><li data-type='method'><a href="module-routes_meeting.html#.HandleMeetingCancellation">HandleMeetingCancellation</a></li><li data-type='method'><a href="module-routes_meeting.html#.RescheduleMeeting">RescheduleMeeting</a></li><li data-type='method'><a href="module-routes_meeting.html#.RetrieveMeetings">RetrieveMeetings</a></li><li data-type='method'><a href="module-routes_meeting.html#.UpdateMeeting">UpdateMeeting</a></li></ul></li><li><a href="module-routes_notification.html">routes/notification</a><ul class='methods'><li data-type='method'><a href="module-routes_notification.html#.SendConfirmationEmail">SendConfirmationEmail</a></li><li data-type='method'><a href="module-routes_notification.html#.SendConfirmationSMS">SendConfirmationSMS</a></li></ul></li><li><a href="module-routes_order.html">routes/order</a><ul class='methods'><li data-type='method'><a href="module-routes_order.html#.CreateOrder">CreateOrder</a></li><li data-type='method'><a href="module-routes_order.html#.DeleteAllOrders">DeleteAllOrders</a></li><li data-type='method'><a href="module-routes_order.html#.GetAllOrders">GetAllOrders</a></li><li data-type='method'><a href="module-routes_order.html#.GetOrderById">GetOrderById</a></li><li data-type='method'><a href="module-routes_order.html#.GetOrderItems">GetOrderItems</a></li><li data-type='method'><a href="module-routes_order.html#.GetSessionInfo">GetSessionInfo</a></li><li data-type='method'><a href="module-routes_order.html#.GetSubscriptionInfo">GetSubscriptionInfo</a></li><li data-type='method'><a href="module-routes_order.html#.GetUserOrders">GetUserOrders</a></li><li data-type='method'><a href="module-routes_order.html#.ListOrdersWithUserInfo">ListOrdersWithUserInfo</a></li><li data-type='method'><a href="module-routes_order.html#.UpdateOrderState">UpdateOrderState</a></li></ul></li><li><a href="module-routes_product.html">routes/product</a><ul class='methods'><li data-type='method'><a href="module-routes_product.html#.CreateProduct">CreateProduct</a></li><li data-type='method'><a href="module-routes_product.html#.GetProducts">GetProducts</a></li></ul></li><li><a href="module-routes_property.html">routes/property</a><ul class='methods'><li data-type='method'><a href="module-routes_property.html#.CustomSearchProperties">CustomSearchProperties</a></li><li data-type='method'><a href="module-routes_property.html#.GetPropertiesByUser">GetPropertiesByUser</a></li><li data-type='method'><a href="module-routes_property.html#.GetPropertyById">GetPropertyById</a></li><li data-type='method'><a href="module-routes_property.html#.ListAgentProperties">ListAgentProperties</a></li><li data-type='method'><a href="module-routes_property.html#.ListProperties">ListProperties</a></li><li data-type='method'><a href="module-routes_property.html#.PingProperty">PingProperty</a></li><li data-type='method'><a href="module-routes_property.html#.PingPropertySession">PingPropertySession</a></li><li data-type='method'><a href="module-routes_property.html#.PingPropertySessionById">PingPropertySessionById</a></li></ul></li><li><a href="module-routes_shipment.html">routes/shipment</a><ul class='methods'><li data-type='method'><a href="module-routes_shipment.html#.ConfirmShipmentDelivery">ConfirmShipmentDelivery</a></li><li data-type='method'><a href="module-routes_shipment.html#.CreateShipment">CreateShipment</a></li><li data-type='method'><a href="module-routes_shipment.html#.DeleteAllShipments">DeleteAllShipments</a></li><li data-type='method'><a href="module-routes_shipment.html#.GetShipmentById">GetShipmentById</a></li><li data-type='method'><a href="module-routes_shipment.html#.ListAllShipments">ListAllShipments</a></li><li data-type='method'><a href="module-routes_shipment.html#.ListUserShipments">ListUserShipments</a></li><li data-type='method'><a href="module-routes_shipment.html#.UpdateShipmentState">UpdateShipmentState</a></li></ul></li><li><a href="module-routes_subscription.html">routes/subscription</a><ul class='methods'><li data-type='method'><a href="module-routes_subscription.html#.CreateSubscription">CreateSubscription</a></li><li data-type='method'><a href="module-routes_subscription.html#.DeleteAllSubscriptions">DeleteAllSubscriptions</a></li><li data-type='method'><a href="module-routes_subscription.html#.EndTrial">EndTrial</a></li><li data-type='method'><a href="module-routes_subscription.html#.GetAllSubscriptions">GetAllSubscriptions</a></li><li data-type='method'><a href="module-routes_subscription.html#.GetSubscriptionByUserId">GetSubscriptionByUserId</a></li></ul></li><li><a href="module-routes_transactions.html">routes/transactions</a><ul class='methods'><li data-type='method'><a href="module-routes_transactions.html#.GetAllTransactions">GetAllTransactions</a></li><li data-type='method'><a href="module-routes_transactions.html#.GetTransactionById">GetTransactionById</a></li><li data-type='method'><a href="module-routes_transactions.html#.GetTransactionsByHardware">GetTransactionsByHardware</a></li><li data-type='method'><a href="module-routes_transactions.html#.GetTransactionsByProperty">GetTransactionsByProperty</a></li></ul></li><li><a href="module-routes_users.html">routes/users</a><ul class='methods'><li data-type='method'><a href="module-routes_users.html#.CreateAdmin">CreateAdmin</a></li><li data-type='method'><a href="module-routes_users.html#.CreateAgent">CreateAgent</a></li><li data-type='method'><a href="module-routes_users.html#.DeleteAdmin">DeleteAdmin</a></li><li data-type='method'><a href="module-routes_users.html#.ForgotPassword">ForgotPassword</a></li><li data-type='method'><a href="module-routes_users.html#.GetAdmin">GetAdmin</a></li><li data-type='method'><a href="module-routes_users.html#.GetAdminAccountList">GetAdminAccountList</a></li><li data-type='method'><a href="module-routes_users.html#.GetAdminList">GetAdminList</a></li><li data-type='method'><a href="module-routes_users.html#.GetOrgs">GetOrgs</a></li><li data-type='method'><a href="module-routes_users.html#.GetStripe">GetStripe</a></li><li data-type='method'><a href="module-routes_users.html#.GetTimezone">GetTimezone</a></li><li data-type='method'><a href="module-routes_users.html#.GetUser">GetUser</a></li><li data-type='method'><a href="module-routes_users.html#.Login">Login</a></li><li data-type='method'><a href="module-routes_users.html#.Logout">Logout</a></li><li data-type='method'><a href="module-routes_users.html#.Register">Register</a></li><li data-type='method'><a href="module-routes_users.html#.RequestCode">RequestCode</a></li><li data-type='method'><a href="module-routes_users.html#.ResetPassword">ResetPassword</a></li><li data-type='method'><a href="module-routes_users.html#.ResetUserPassword">ResetUserPassword</a></li><li data-type='method'><a href="module-routes_users.html#.SuperadminRegister">SuperadminRegister</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateAgent">UpdateAgent</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateProfile">UpdateProfile</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateSettings">UpdateSettings</a></li><li data-type='method'><a href="module-routes_users.html#.UpdateUser">UpdateUser</a></li></ul></li><li><a href="module-routes_webhook.html">routes/webhook</a></li></ul><h3>Events</h3><ul><li><a href="module-routes_contactVerified.html#~event:CVWaitList">CVWaitList</a></li><li><a href="module-routes_contactVerified.html#~event:cleanupCVWaitList">cleanupCVWaitList</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">controllers/property.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Handles all property related requests.
+ * @module Controller/property
+ */
+const ObjectId = require('mongoose').Types.ObjectId;
+const { v4: uuidv4 } = require('uuid');
+const { splitTags } = require('../helpers/utils')
+
+const Property = require('../models/property');
+const Meeting = require('../models/meeting');
+const Contact = require('../models/contact');
+const User = require('../models/user');
+const Kit = require('../models/kit');
+
+const { ROWS_PER_PAGE } = require('./../constants')
+const { triggerCameraStreams } = require('./camera');
+// @todo calandar function to controller or utils
+const calendar = require('../routes/calendar');
+const { associateKit } = require('../helpers/property');
+const { uploadS3, getFileExtensionFromBase64 } = require('../helpers/aws-s3');
+
+/**
+ * Get details of a specific property based on the request.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+function property(req, res, next) {
+  let query = {
+    $or: [
+      { user: req.user._id },
+      { allowedAgents: req.user._id }
+    ]
+  }
+  if (req.params.id &amp;&amp; ObjectId.isValid(req.params.id)) {
+    query._id = req.params.id;
+  } else {
+    return res.status(403).end()
+  }
+
+  if (req.user.orgs) {
+    query.user = req.user.orgs;
+  }
+  Property.find(query).populate('contacts').populate('kit').populate('user', 'email org settings.meetings.timezone').exec((e, property) => {
+
+    let options = [{
+      path: 'kit.hardware',
+      model: 'Hardware'
+    }];
+
+    Property.populate(property, options, function (err, property) {
+      if (req.params.id) {
+        return res.status(200).json(property[0])
+      }
+    });
+
+  })
+};
+
+/**
+ * Get a list of properties based on the request parameters.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+function propertyList(req, res, next) {
+
+  let query = {};
+  const { page, sort, order, term } = req.query
+  let allowedQueryFields = {
+    'status': true, 'address': true, 'name': true, 'listedTs': true,
+    'shortAddress': true, 'state': true, 'city': true, 'zipCode': true, 'unit': true,
+  };
+  for (var index in req.query) {
+    if (allowedQueryFields[index] &amp;&amp; req.query[index] !== 'undefined' &amp;&amp; req.query[index] !== 'null' &amp;&amp; index != page) {
+      query[index] = req.query[index].split(',')
+    }
+  }
+
+  let sortByField = 'createdDate';
+  let orderBy = 'desc';
+  if (order) {
+    orderBy = order;
+  }
+
+  if (sort == "price") {
+    sortByField = "price"
+  }
+
+  if (sort == "active") {
+    query.status = "active"
+    sortByField = "status"
+  }
+
+  if (sort == "rented") {
+    query.status = "rented"
+    sortByField = "status"
+  }
+
+  if (sort == "listed") {
+    sortByField = "listedTs"
+  }
+
+  if (term) {
+    query.address = { "$regex": term, "$options": "i" }
+  }
+
+  if (req.user.orgs) {
+    query['$or'] = [{ user: String(req.user._id) }, { user: String(req.user.orgs) }];
+  } else {
+    // query.user = String(req.user._id);
+    query['$or'] = [
+      { user: String(req.user._id) },
+      { allowedAgents: { $in: [req.user._id] } }
+    ];
+  }
+  const pageNumber = page ? page - 1 : 0
+  const limit = ROWS_PER_PAGE
+  const skip = ROWS_PER_PAGE * (pageNumber)
+  query = {
+    $or: [
+      { user: req.user._id },
+      { allowedAgents: req.user._id }
+    ]
+  };
+  if (pageNumber == 0) {
+    Property.find(query, { unit: 1, address: 1, status: 1, features: 1, name: 1, price: 1, classification: 1, tags: 1, listedTs: 1, category: 1, contacts: 1, lastPing: 1, primaryImage: 1, images: 1, shortAddress: 1, state: 1, city: 1, zipCode: 1, bathrooms: 1, bedrooms: 1, sqft: 1, allowedAgents: 1 }, { limit: limit, sort: { [sortByField]: orderBy } }, async (e, properties) => {
+      let totalPages = 0
+      let totalResults = 0
+      try {
+        totalResults = await Property.count({ ...query })
+        totalPages = Math.ceil(totalResults / ROWS_PER_PAGE)
+      } catch (error) {
+        console.log(error)
+      }
+
+      res.json({ totalPages, element_per_page: ROWS_PER_PAGE, totalResults, properties })
+    }).populate('user', 'firstName lastName email org').populate('kit', 'device_id')
+      .populate({
+        path: 'meetings',
+        match: { status: { $ne: 'cancelled' } },
+        select: 'status'
+      });
+  } else {
+    Property.find(query, { unit: 1, address: 1, status: 1, features: 1, name: 1, price: 1, classification: 1, tags: 1, listedTs: 1, category: 1, contacts: 1, lastPing: 1, primaryImage: 1, images: 1, shortAddress: 1, state: 1, city: 1, zipCode: 1, bathrooms: 1, bedrooms: 1, sqft: 1, allowedAgents: 1 }, { skip: skip, limit: limit, sort: { [sortByField]: orderBy } }, async (e, properties) => {
+      res.json({ properties: properties })
+    }).populate('user', 'firstName lastName email org').populate('kit', 'device_id').populate({
+      path: 'meetings',
+      match: { status: { $ne: 'cancelled' } },
+      select: 'status'
+    });
+  };
+}
+
+/**
+ * Get a list of properties for property assignment.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+function propertyAssignList(req, res, next) {
+  let query = {
+    $or: [
+      { user: req.user._id },
+      { allowedAgents: req.user._id }
+    ]
+  };
+  Property.find(query, { unit: 1, address: 1, status: 1, features: 1, name: 1, price: 1, classification: 1, tags: 1, listedTs: 1, category: 1, contacts: 1, lastPing: 1, primaryImage: 1, images: 1, shortAddress: 1, state: 1, city: 1, zipCode: 1, bathrooms: 1, bedrooms: 1, sqft: 1, allowedAgents: 1 }, async (e, properties) => {
+    res.json({ properties: properties })
+  }).populate('user', 'firstName lastName email org').populate('kit', 'device_id').populate({
+    path: 'meetings',
+    match: { status: { $ne: 'cancelled' } },
+    select: 'status'
+  });
+}
+
+/**
+ * Get properties assigned to a specific user.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+async function propertiesUser(req, res, next) {
+  let query = {
+    _id: req.params.id
+  };
+
+  if (req.params.id &amp;&amp; ObjectId.isValid(req.params.id)) {
+    query._id = req.params.id;
+  } else {
+    return res.status(403).end()
+  }
+
+  const allowedAgents = await Property.find(query, { allowedAgents: 1 }).exec();
+  const agents = await Promise.all(allowedAgents[0].allowedAgents.map(id => User.find(id)))
+  res.json({ agents })
+}
+
+/**
+ * Get a custom search list of properties based on the request parameters.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+function propertyListCustomSearch(req, res, next) {
+
+  let query = {
+    $or: [
+      { user: req.user._id },
+      { allowedAgents: req.user._id }
+    ]
+  };
+  const { page, term } = req.query
+
+  let allowedQueryFields = {
+    'status': true, 'address': true, 'name': true, 'listedTs': true
+    ,
+    'shortAddress': true, 'state': true, 'city': true, 'zipCode': true, 'unit': true
+  };
+  for (var index in req.query) {
+    if (allowedQueryFields[index] &amp;&amp; req.query[index] !== 'undefined' &amp;&amp; req.query[index] !== 'null' &amp;&amp; index != page &amp;&amp; index != term) {
+      query[index] = req.query[index].split(',')
+    }
+  }
+
+  if (term) {
+    query.address = { "$regex": term, "$options": "i" }
+  }
+  if (req.user.orgs) {
+    query.user = req.user.orgs;
+  }
+  const pageNumber = page ? page - 1 : 0
+  const limit = ROWS_PER_PAGE
+  const skip = ROWS_PER_PAGE * (pageNumber)
+  if (pageNumber == 0) {
+    Property.find(query, { unit: 1, address: 1, status: 1, features: 1, name: 1, price: 1, classification: 1, tags: 1, listedTs: 1, category: 1, contacts: 1, lastPing: 1, primaryImage: 1, images: 1, shortAddress: 1, state: 1, city: 1, zipCode: 1 }, { limit: limit }, async (e, properties) => {
+      let totalPages = 0
+      let totalResults = 0
+      try {
+        totalResults = await Property.count({ ...query })
+        totalPages = Math.ceil(totalResults / ROWS_PER_PAGE)
+      } catch (error) {
+        console.log(error)
+      }
+
+      res.json({ totalPages, element_per_page: ROWS_PER_PAGE, totalResults, properties })
+    }).populate('user', 'firstName lastName email org')
+  } else {
+    Property.find(query, { unit: 1, address: 1, status: 1, features: 1, name: 1, price: 1, classification: 1, tags: 1, listedTs: 1, category: 1, contacts: 1, lastPing: 1, primaryImage: 1, images: 1, shortAddress: 1, state: 1, city: 1, zipCode: 1 }, { skip: skip, limit: limit }, async (e, properties) => {
+      res.json({ properties: properties })
+
+    }).populate('user', 'firstName lastName email org')
+
+  };
+}
+
+/**
+ * Get public properties based on the request query parameters.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ */
+const propertiesPublic = async (req, res) => {
+  try {
+    const propertiesQuery = req.query;
+    const propertyIds = Object.keys(propertiesQuery)
+      .flatMap(id => id.split(','))
+      .filter(id => ObjectId.isValid(id));
+
+
+    const { agentId, propId, state, city, address, unit } = req.params;
+    const response = { list: [], available: true };
+    const category = 'rent';
+    const query = { category };
+
+    const isValidObjectId = (id) => id &amp;&amp; ObjectId.isValid(id);
+    const isValidString = (str) => str &amp;&amp; str.trim() !== '';
+
+    const validAgent = isValidObjectId(agentId);
+    const validPropId = isValidObjectId(propId);
+    const validState = isValidString(state);
+    const validCity = isValidString(city);
+    const validAddress = isValidString(address);
+    const validUnit = isValidString(unit);
+
+    if (propertyIds.length > 0) {
+      query._id = { $in: propertyIds };
+    } else {
+      if (validAgent) {
+        query.status = { $nin: ['inactive', 'rented', 'sold'] };
+
+        const agent = await User.findById(agentId, { _id: 1, role: 1 });
+        if (!agent) throw new Error('Agent not found');
+
+        let usersList = [{ user: agentId }];
+
+        if (agent.role === 'org') {
+          const usersInOrg = await User.find({ org: agent._id }, { _id: 1 });
+          usersList = usersInOrg.map(user => ({ user: user._id }));
+          usersList.push({ user: agentId });
+        }
+
+        query.$or = usersList;
+      }
+
+      if (validPropId) {
+        query._id = propId;
+      } else if (validState &amp;&amp; validCity &amp;&amp; validAddress) {
+        query.status = { $nin: ['inactive', 'rented', 'sold'] };
+        query.state = state.replace(/[-_~]/g, match => ({ '-': ' ', '_': '/', '~': '-' }[match]));
+        query.city = city.replace(/[-_~]/g, match => ({ '-': ' ', '_': '/', '~': '-' }[match]));
+        query.shortAddress = address.replace(/[-_~]/g, match => ({ '-': ' ', '_': '/', '~': '-' }[match]));
+
+        if (validUnit) {
+          query.unit = unit;
+        }
+      }
+    }
+
+
+    const properties = await Property.find(query, {
+      name: 1,
+      address: 1,
+      shortAddress: 1,
+      unit: 1,
+      bathrooms: 1,
+      bedrooms: 1,
+      sqft: 1,
+      zipCode: 1,
+      city: 1,
+      state: 1,
+      country: 1,
+      description: 1,
+      price: 1,
+      category: 1,
+      features: 1,
+      primaryImage: 1,
+      occupancyTs: 1,
+      status: 1,
+      selfGuide: 1,
+      images: 1,
+    }).populate('user', 'firstName lastName company.name company.idImage settings.meetings');
+
+    if (validPropId &amp;&amp; properties.length > 0) {
+      response.available = !['inactive', 'rented', 'sold'].includes(properties[0].status);
+    }
+
+    response.list = properties;
+    res.json(response);
+  } catch (error) {
+    console.error("Error fetching properties:", error);
+    res.status(500).send({ error: 'Internal Server Error' });
+  }
+};
+
+
+/**
+ * Get details of a single public property based on property and agent IDs.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ */
+const getSinglePublicProperty = async (req, res) => {
+  const { propId, agentId } = req.params;
+  if (propId !== undefined &amp;&amp; propId !== 'agent') {
+    try {
+      const property = await Property.findById(propId).populate('user').lean();
+      if (property) {
+        return res.status(200).json({
+          available: true,
+          list: [property]
+        });
+      }
+    } catch (error) {
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+  }
+  return res.status(400).json({ error: 'Invalid property ID' });
+};
+
+/**
+ * Create a booking for a property with a specific agent.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+async function makeBook(req, res, next) {
+  const propertyId = req.params.id
+  const { agent } = req.query
+
+  if (!ObjectId.isValid(propertyId) || !ObjectId.isValid(agent)) {
+    console.log("INVALID ID")
+    return res.status(400).json({ message: 'Invalid property or agent ID' });
+  }
+
+  try {
+    const [property, user] = await Promise.all([Property.findById(propertyId), User.findById(agent)])
+
+    const { email } = req.body.contact;
+    let slot = req.body.timeslot;
+    const existingContact = await Contact.findOne({ email: email });
+    let contact;
+    if (existingContact) {
+      contact = existingContact;
+      contact.user = user._id;
+      Object.keys(req.body.contact).forEach(key => {
+        if (req.body.contact[key] !== contact[key]) {
+          contact[key] = req.body.contact[key];
+        }
+      });
+    } else {
+
+      contact = new Contact(req.body.contact);
+      contact.tags = ['new'];
+      contact.user = user._id;
+      contact.allowedAgents = property.allowedAgents
+      contact.createdDate = new Date().getTime();
+    }
+
+    if (req.body.contact.idImage) {
+      const extension = getFileExtensionFromBase64(req.body.contact.idImage);
+      const fileName = `public/images/contact/${uuidv4()}-id.${extension}`;
+      const uploaded = await uploadS3(req.body.contact.idImage, fileName);
+      if (!uploaded.status) {
+        return res.status(500).send(uploaded.message);
+      }
+      contact.idImage = `/${fileName}`;
+    }
+    await contact.save();
+
+    Meeting.count({
+      status: 'active',
+      $and: [
+        { startTime: { $gte: slot.start } },
+        { startTime: { $lt: slot.end } }
+      ],
+      property: property._id,
+    }).exec(async function (err, count) {
+      if (err) {
+        console.log("ERROR COUNTING MEETINGS: ", err)
+        return next(err);
+      }
+
+      if (count !== 0) {
+        return res.status(500).json({ message: "Meeting slot no longer available" });
+      }
+
+      const { settings } = await User.findById(contact.user).select('settings')
+
+      const { notifications } = settings
+
+      const { start: startTime } = slot
+
+      let meeting = new Meeting({
+        status: 'active',
+        user: contact.user,
+        contact: contact._id,
+        property: property._id,
+        localDateTime: req.body.localDateTime,
+        startTime,
+        stopTime: slot.end,
+        duration: slot.duration,
+        reminder: {
+          sendAt: startTime - notifications.reminder.time
+        },
+        instructions: {
+          sendAt: startTime - 7200000
+        },
+        syncedWithGoogle: true,
+        tags: ['new', 'user selected']
+      });
+
+
+      contact.meetings = [meeting._id];
+      meeting.allowedAgents = property.allowedAgents;
+
+      meeting.save(function (err) {
+        if (err) {
+          console.log("ERROR CREATING MEETING: ", err)
+          return next(err)
+        }
+
+        Property.findOneAndUpdate({ _id: req.params.id }, {
+          $push: {
+            contacts: contact._id,
+            meetings: meeting._id
+          }
+        }).populate('user', 'settings email company').exec((err, property) => {
+          const companyName = (property.user.company.name !== undefined &amp;&amp; property.user.company.name !== '') ? property.user.company.name : 'Delet';
+
+          let event = {
+            id: `${property._id}000000${meeting._id}`,
+            summary: `${companyName} appointment: ${property.address}`,
+            description: 'Viewing of ' + property.address,
+            location: property.address,
+            sendUpdates: 'all',
+            start: {
+              dateTime: new Date(meeting.startTime).toISOString(),
+            },
+            end: {
+              dateTime: new Date(meeting.stopTime).toISOString(),
+            },
+            'attendees': [
+              { 'email': contact.email },
+              { 'email': property.user.email.toString() }
+            ],
+            'reminders': {
+              'useDefault': false,
+              'overrides': [
+                { 'method': 'email', 'minutes': 24 * 60 },
+                { 'method': 'popup', 'minutes': 10 },
+              ],
+            },
+          }
+
+          // calendar.insertEvent(event);
+
+          res.status(201).json(meeting)
+        });
+      })
+
+    });
+
+  } catch (error) {
+    console.log("ERROR WHILE CREATING BOOKING: ", error)
+  }
+}
+
+/**
+ * Calculate the availability of a property for booking slots.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+function calcAvailability(req, res, next) {
+
+  let query = {};
+
+  const validId = ObjectId.isValid(req.params.id);
+
+  if (validId) {
+    query._id = req.params.id;
+  } else {
+    return res.status(400).end();
+  }
+
+  Property.findOne(query).populate('user').exec((err, property) => {
+    if (err) {
+      return next(err);
+    }
+    let date = new Date();
+    let month = date.getMonth();
+    let today = new Date();
+
+    let year = date.getFullYear();
+    let day = date.getDate();
+    if (!property) {
+      res.status(403).end();
+    }
+    if (req.query.month &amp;&amp; !isNaN(req.query.month) &amp;&amp; req.query.month >= 0 &amp;&amp; req.query.month &lt;= 12) {
+      if (req.query.year &amp;&amp; !isNaN(req.query.year) &amp;&amp; req.query.year >= 2021) {
+        year = parseInt(req.query.year);
+        month = parseInt(req.query.month);
+        date = new Date(monthsList[month] + ' ' + year)
+        day = date.getDate();
+
+      }
+    }
+
+    let calibration = new Date();
+    let startTime = new Date(monthsList[month] + ' ' + year).getTime();
+    let endTime = new Date(new Date(startTime + 86400000 * 35).getTime()).setDate(1);
+    let serverOffset = calibration.getTimezoneOffset() * 60 * 1000;
+
+    try {
+      if (property !== null) {
+        Meeting.find({
+          status: 'active',
+          property: property._id,
+          $and: [{ startTime: { $gte: startTime } }, { startTime: { $lt: endTime } }]
+        })
+          .sort({ startTime: -1 })
+          .exec(function (err, meetings) {
+
+            let settings = property.user.settings.meetings;
+            let days = Math.round((endTime - startTime) / 86400000);
+            let available = [];
+            let offset = settings.timezone * 60 * 60 * 1000;
+
+            let pointer = new Date(-offset + startTime - serverOffset);
+            for (let i = 1; i &lt;= days; i++) {
+              let slots = null;
+              if (i >= day &amp;&amp; (pointer - today + 86400000) > 0) {
+                let daySetting = settings.dow[daysList[pointer.getDay()]];
+                if (daySetting.available) {
+                  slots = [];
+                  let slot = new Date(pointer.getTime() + daySetting.startTime * 60 * 1000);
+                  let endSlot = new Date(pointer.getTime() + (daySetting.stopTime * 60 * 1000 - settings.duration * 60 * 1000));
+
+                  while (slot &lt; endSlot) {
+                    let available = true;
+                    if (slot &lt; new Date()) {
+                      available = false
+                    }
+                    // this is not efficient
+                    // @todo improve this logic
+                    // better to remove based on meetings
+                    for (let i = 0; i &lt; meetings.length; i++) {
+                      let meeting = meetings[i];
+                      if (slot.getTime() >= meeting.startTime &amp;&amp; slot.getTime() &lt; meeting.stopTime) {
+                        available = false;
+                      }
+                    }
+
+                    slots.push({
+                      start: slot.getTime(),
+                      duration: settings.duration,
+                      end: slot.getTime() + settings.duration * 60 * 1000,
+                      available: available
+                    });
+                    slot = new Date(slot.getTime() + settings.duration * 60 * 1000 + settings.padding * 60 * 1000);
+                  }
+                }
+              }
+              available.push(slots);
+              pointer = new Date(pointer.getTime() + 86400000)
+            }
+            return res.status(200).json({
+              agent: {
+                name: property.user.firstName,
+              },
+              company: {
+                name: property.user.company.name
+              },
+              address: property.address,
+              month: monthsList[month],
+              year: year,
+              idVerification: property.prospectIdentityVerification,
+              selfGuide: property.selfGuide,
+              slots: available
+            });
+
+          })
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  })
+}
+
+/**
+ * Calculate the availability of a property for a specific month.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+async function calcMonthAvailability(req, res, next) {
+
+  const { id: propertyId } = req.params
+
+  try {
+    const validId = ObjectId.isValid(propertyId);
+
+    if (!validId) return res.status(400).end();
+
+    const property = await Property.findById(propertyId)
+
+    if (!property) return res.status(404).end();
+
+    const user = await User.findById(req.query.agent).select('firstName company settings')
+
+    const { meetings: userMeetingSettings } = user.settings
+
+    const month = parseInt(req.query.month);
+    const year = parseInt(req.query.year);
+
+    const now = new Date();
+    const currentTimestamp = now.getTime();
+
+    const startOfMonth = new Date(year, month, 1).getTime();
+    const endOfMonth = new Date(year, month + 1, 0, 23, 59, 59).getTime();
+
+    const propertyMonthMeetings = await Meeting.find({
+      property: property._id,
+      status: 'active',
+      startTime: {
+        $gte: Math.max(startOfMonth, currentTimestamp),
+        $lt: endOfMonth
+      }
+    });
+
+    const excludedDates = propertyMonthMeetings.map((meeting) => meeting.startTime)
+
+    return res.status(200).json({
+      agent: user.firstName,
+      company: user.company.name,
+      address: property.shortAddress,
+      month: monthsList[month],
+      year,
+      idVerification: property.prospectIdentityVerification,
+      settings: user.settings,
+      excludedDates,
+    })
+
+  } catch (error) {
+    console.log("ERROR CALCULATING AVAILABILITY: ", error)
+  }
+
+  Property.findOne(query).exec((err, property) => {
+    if (err) {
+      return next(err);
+    }
+
+    let calibration = new Date();
+    let startTime = new Date(monthsList[month] + ' ' + year).getTime();
+    let endTime = new Date(new Date(startTime + 86400000 * 35).getTime()).setDate(1);
+    let serverOffset = calibration.getTimezoneOffset() * 60 * 1000;
+
+    try {
+      if (property !== null) {
+        Meeting.find({
+          status: 'active',
+          property: property._id,
+          $and: [{ startTime: { $gte: startTime } }, { startTime: { $lt: endTime } }]
+        })
+          .sort({ startTime: -1 })
+          .exec(function (err, meetings) {
+
+            let settings = property.user.settings.meetings;
+            let days = Math.round((endTime - startTime) / 86400000);
+            let available = [];
+            let offset = settings.timezone * 60 * 60 * 1000;
+
+            let pointer = new Date(-offset + startTime - serverOffset);
+            for (let i = 1; i &lt;= days; i++) {
+              let slots = null;
+              if (i >= day &amp;&amp; (pointer - today + 86400000) > 0) {
+                let daySetting = settings.dow[daysList[pointer.getDay()]];
+                if (daySetting.available) {
+                  slots = [];
+                  let slot = new Date(pointer.getTime() + daySetting.startTime * 60 * 1000);
+                  let endSlot = new Date(pointer.getTime() + (daySetting.stopTime * 60 * 1000 - settings.duration * 60 * 1000));
+
+                  while (slot &lt; endSlot) {
+                    let available = true;
+                    if (slot &lt; new Date()) {
+                      available = false
+                    }
+                    // this is not efficient
+                    // @todo improve this logic
+                    // better to remove based on meetings
+                    for (let i = 0; i &lt; meetings.length; i++) {
+                      let meeting = meetings[i];
+                      if (slot.getTime() >= meeting.startTime &amp;&amp; slot.getTime() &lt; meeting.stopTime) {
+                        available = false;
+                      }
+                    }
+
+                    slots.push({
+                      start: slot.getTime(),
+                      duration: settings.duration,
+                      end: slot.getTime() + settings.duration * 60 * 1000,
+                      available: available
+                    });
+                    slot = new Date(slot.getTime() + settings.duration * 60 * 1000 + settings.padding * 60 * 1000);
+                  }
+                }
+              }
+              available.push(slots);
+              pointer = new Date(pointer.getTime() + 86400000)
+            }
+            return res.status(200).json({
+              agent: {
+                name: property.user.firstName,
+              },
+              company: {
+                name: property.user.company.name
+              },
+              address: property.address,
+              month: monthsList[month],
+              year: year,
+              idVerification: property.prospectIdentityVerification,
+              selfGuide: property.selfGuide,
+              slots: available
+            });
+
+          })
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  })
+}
+
+/**
+ * Clone a property based on its ID.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+function cloneProperty(req, res, next) {
+  Property.findOne({ _id: req.params.id }).exec(function (err, property) {
+    if (err) {
+      return next(err);
+    } else {
+      if (!property) {
+        return res.status(403).end();
+      } else {
+        property.createdDate = new Date().getTime();
+        property.updatedDate = new Date().getTime();
+        property.user = req.user._id;
+
+        property = property.toObject();
+        delete property._id;
+
+        property.kits = [];
+        property.contacts = [];
+        property.meetings = [];
+        const newProperty = new Property(property)
+
+        newProperty.save(function (err) {
+          if (err) {
+            return next(err)
+          }
+
+          return res.status(200).json({ _id: newProperty._id });
+        })
+      }
+    }
+  })
+}
+
+/**
+ * Create a new property based on the request body.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+const newProperty = async (req, res, next) => {
+
+  let body = req.body;
+
+  if (body.kit === '') {
+    delete body['kit'];
+  }
+  body.address = `${body.shortAddress}${body.unit ? ` Unit ${body.unit}` : ''}, ${body.city}, ${body.state}, ${body.zipCode}`
+  const user = await User.findById(req.user._id);
+  const adminId = user.adminId;
+  let property = new Property(body);
+  if (req.user.role == "agent") {
+    property.user = adminId;
+  } else {
+    property.user = req.user._id;
+  }
+  property.allowedAgents.push(req.user._id);
+  property.createdDate = new Date().getTime();
+  property.updatedDate = new Date().getTime();
+  property.session = { id: uuidv4(), expires: new Date().getTime() + (86400000 * 700) }
+
+  const uploadedImages = []
+  if (body.images.length > 0) {
+    for (let i = 0; i &lt; body.images.length; i++) {
+      const image = body.images[i]
+      const extension = image.split(';')[0].split('/')[1];
+      const fileName = `public/images/property/${uuidv4()}.${extension}`;
+      const uploaded = await uploadS3(image, fileName);
+
+      if (!uploaded.status) {
+        res.status(500).send(uploaded.message);
+      }
+      uploadedImages.push(uploaded.data.Location)
+    }
+  }
+
+  property.images = uploadedImages
+
+  property.save((err, newProperty) => {
+    if (err) {
+      res.status(500).send(err);
+    } else {
+      if (property.kit) {
+        associateKit({
+          userId: req.user._id,
+          propertyId: property._id,
+          kit: property.kit
+        });
+      }
+      res.status(200).json({ _id: property._id });
+    }
+  });
+}
+
+/**
+ * Update an existing property based on the request body.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
+const updateProperty = async (req, res, next) => {
+  let body = req.body;
+  body.tags = splitTags(body.tags);
+  const uploadedImages = [];
+
+  if (body.images.length > 0) {
+    for (let i = 0; i &lt; body.images.length; i++) {
+      const image = body.images[i];
+
+      if (image.startsWith('data')) {
+        const extension = image.split(';')[0].split('/')[1];
+        const fileName = `public/images/property/${uuidv4()}.${extension}`;
+        const uploaded = await uploadS3(image, fileName);
+
+        if (!uploaded.status) {
+          res.status(500).send(uploaded.message);
+          return; // Exit the loop and function if there's an error
+        }
+
+        uploadedImages.push(uploaded.data.Location);
+      } else if (image.startsWith('http')) {
+        uploadedImages.push(image);
+      }
+    }
+  }
+
+
+  body.images = uploadedImages
+  let propQuery = {
+    _id: { $ne: body._id },
+    shortAddress: body.shortAddress,
+    unit: body.unit,
+    city: body.city,
+    state: body.state
+  }
+  if (body.unit !== undefined) {
+    propQuery['unit'] = body.unit
+  }
+  if (body.status === 'rented') {
+    body.rentedDate = new Date().getTime()
+  }
+  // Property.count(propQuery).exec(function (err, count) {
+  //     if (err) {
+  //         console.log(err);
+  //     } else {
+  //         if (count > 0) {
+  //             return res.status(409).json({ err: true, message: "Property already exists" })
+  //         }
+  //     }
+  // })
+  let removeKit = false;
+  let action = {};
+  if (body.kit === null) {
+    removeKit = true;
+    delete body.kit;
+    action['$unset'] = { kit: true };
+  }
+  action['$set'] = body;
+  let kitIdOld = '';
+  Property.findOne(
+    {
+      _id: req.params.id, $or: [
+        { user: req.user._id },
+        { allowedAgents: req.user._id }
+      ]
+    },
+    function (err, property) {
+      if (property.kit) {
+        kitIdOld = property.kit._id;
+      }
+      if (err) {
+        return next(err);
+      }
+    });
+  Property.findOneAndUpdate(
+    {
+      _id: req.params.id, $or: [
+        { user: req.user._id },
+        { allowedAgents: req.user._id }
+      ]
+    },
+    action,
+    { upsert: false, multi: false, new: true },
+    function (err, property) {
+      if (err) {
+        return next(err);
+      }
+      if (!property) {
+        return res.status(403);
+      }
+      // if property is rented cancel meetings
+      if (property.status === 'rented') {
+        Meeting.find({ property: req.params.id, startTime: { $gt: new Date().getTime() } }, (err, meetings) => {
+          if (err) {
+            console.log(err);
+          } else {
+            meetings.forEach(meeting => {
+              Meeting.findOneAndUpdate(
+                { _id: meeting._id },
+                { $set: { status: 'cancelled' } })
+                .populate('property', 'address')
+                .populate('contact', 'firstName lastName email phone subscription')
+                .populate('user', 'settings.meetings.timezoneLocation')
+                .exec(function (err, meetingCancelled) {
+                  calendar.deleteEvent(`${meeting.property._id}000000${meeting._id}`);
+                  const userTimezone = meeting.user.settings.meetings.timezoneLocation ? meeting.user.settings.meetings.timezoneLocation : 'UTC';
+                  if (meetingCancelled.contact.subscription) {
+                    notification.sendEmail({
+                      emailAlias: '',
+                      to: meetingCancelled.contact.email,
+                      subject: `Appointment cancelled`,
+                      body: `Hi, ${meetingCancelled.property.address} was rented, so your future appointment at ${dayjs(meetingCancelled.startTime).tz(userTimezone).format('MM/DD/YYYY hh:mm a')}has been canceled. To view other units, please follow the link below to explore our available listings.&lt;br>https://app.delet.ai/#!///public/list/${String(meetingCancelled.user._id)}&lt;br>&lt;br>Unsubscribe or change your notification preferences.&lt;br>https://app.delet.ai/subscription?contact=${meetingCancelled.contact._id}`
+                    }).catch((error) => {
+                      console.log(error);
+                    });
+                    notification.sendSms({
+                      phone: meetingCancelled.contact.phone,
+                      body: `Hi, ${meetingCancelled.property.address} was rented, so your future appointment at ${dayjs(meetingCancelled.startTime).tz(userTimezone).format('MM/DD/YYYY hh:mm a')} has been canceled. To view other units, please follow the link below to explore our available listings.\nhttps://app.delet.ai/#!/book/list/${String(meetingCancelled.user._id)}\n\nUnsubscribe or change your notification preferences.\nhttps://app.delet.ai/subscription?contact=${meetingCancelled.contact._id}`
+                    }).catch(error => console.log(error));
+                  }
+                })
+            });
+          }
+        })
+      }
+      // create invoice when is rented
+      if (property.kit &amp;&amp; property.user) {
+        if (property.status === 'rented' &amp;&amp; (property.kit.service === 'Kit plus installation' || property.kit.service === 'Leasing Agency')) {
+          createInvoice({
+            for: 'rented',
+            property: property._id,
+            kit: property.kit,
+            user: property.user,
+          });
+          const company = (property.kit.service === 'Leasing Agency' || property.user.email === 'info@eavlyla.com') ? property.managementCompany.name : property.user.company.name;
+          const emailSubject = `New Invoice for ${property.user.company.name} and ${property.user.email} `;
+          const emailBody = `${property.user.email} (${property.user.firstName} ${property.user.lastName}) of the company ${company} has a new invoice for rented property ${property.address}, with the "${property.kit.name}" kit and "${property.kit.service}" kit service .`;
+
+          notification.sendEmail({
+            emailAlias: '',
+            to: process.env.invoice_email,
+            subject: emailSubject,
+            body: emailBody
+          }).catch((error) => {
+            console.log(error);
+          });
+        }
+      }
+      if (body.kit) {
+        let kitToAssociate = {
+          userId: req.user._id,
+          propertyId: property._id,
+          kit: body.kit,
+          removeKit: removeKit,
+        }
+        if (kitIdOld !== '') {
+          kitToAssociate.kitIdOld = kitIdOld;
+        }
+        associateKit(kitToAssociate);
+      }
+      return res.status(200).end();
+    })
+    .populate('kit')
+    .populate('user')
+}
+
+/**
+ * Update a property's kit information.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ */
+const updatePropertyKit = async (req, res) => {
+  const { kit } = req.body
+  const { id: property } = req.params
+
+  console.log(kit)
+
+  if (kit) {
+    await Promise.all([
+      Property.findOneAndUpdate({ kit }, { kit: null }),
+      Kit.findOneAndUpdate({ property }, { property: null }),
+    ])
+    await Promise.all([
+      Property.findByIdAndUpdate(property, {
+        ...req.body
+      }),
+      Kit.findByIdAndUpdate(kit, {
+        property
+      })
+    ])
+    const kits = await Kit.find({ user: req.user._id }).populate('property', 'address shortAddress').lean()
+    res.status(200).json(kits)
+    return
+  }
+
+  await Property.findByIdAndUpdate(property, {
+    ...req.body
+  })
+
+  const kits = await Kit.find({ user: req.user._id }).populate('property', 'address shortAddress').lean()
+
+  res.status(200).json(kits)
+}
+
+/**
+ * Assign selected properties to a user.
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ * @param {Object} user - The user object.
+ */
+async function assignPropertyToUser(req, res, next, user) {
+  const userId = user._id;
+  const selectedProperties = req.body.selectedProperties;
+  if (!selectedProperties || !selectedProperties.length) {
+    return res.status(200).json(user || { message: "User updated" });
+  }
+  const query = {
+    $or: [
+      { user: userId },
+      { allowedAgents: userId }
+    ]
+  };
+
+  const allProp = await Property.find(query).select('_id').lean();
+  const previousPropertyIds = allProp.map((p) => p._id.toString());
+
+  const currentPropertyIds = selectedProperties.map((p) => p._id);
+  const propertiesToRemove = previousPropertyIds.filter(id => !currentPropertyIds.includes(id));
+
+  // remove agent from allowedAgent array
+  await Property.updateMany(
+    { _id: { $in: propertiesToRemove } },
+    { $pull: { allowedAgents: userId } }
+  );
+  await Contact.updateMany(
+    { properties: { $in: propertiesToRemove } },
+    { $pull: { properties: { $in: propertiesToRemove }, allowedAgents: userId } }
+  );
+  await Meeting.updateMany(
+    { property: { $in: propertiesToRemove } },
+    { $pull: { allowedAgents: userId } }
+  );
+
+  const propertiesUpdates = selectedProperties.map(property => {
+    return Property.updateOne(
+      { _id: ObjectId(property._id) },
+      { $addToSet: { allowedAgents: ObjectId(userId) } }
+    ).exec();
+  });
+
+  const contactUpdates = selectedProperties.map(property => {
+    return Contact.updateMany(
+      { properties: { $in: [ObjectId(property._id)] } },
+      { $addToSet: { allowedAgents: ObjectId(userId) } }
+    ).exec();
+  });
+  const meetingUpdates = selectedProperties.map(property => {
+    return Meeting.updateMany(
+      { property: ObjectId(property._id) },
+      { $addToSet: { allowedAgents: ObjectId(userId) } }
+    ).exec();
+  });
+
+  Promise.all([...propertiesUpdates, ...contactUpdates, ...meetingUpdates])
+    .then(() => {
+      if (user) {
+        res.json(user);
+      } else {
+        res.status(200).end();
+      }
+    })
+    .catch(err => {
+      next(err);
+    });
+}
+
+const monthsList = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+const daysList = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+
+//---------------------- Rahman Test Functions ----------------------//
+// a function that is used in react app property details page to get the cameras and tringger the lambda function to start the stream
+function propertyByIdTest(req, res, next) {
+  let query = {
+    $or: [
+      { user: req.user._id },
+      { allowedAgents: req.user._id }
+    ]
+  }
+  if (req.params.id &amp;&amp; ObjectId.isValid(req.params.id)) {
+    query._id = req.params.id;
+  } else {
+    return res.status(403).end()
+  }
+
+  if (req.user.orgs) {
+    query.user = req.user.orgs;
+  }
+  Property.find(query).populate('contacts').populate('kit').populate('user', 'email org settings.meetings.timezone').exec((e, property) => {
+    let options = [{
+      path: 'kit.hardware',
+      model: 'Hardware'
+    }];
+
+    Property.populate(property, options, async function (err, property) {
+      if (req.params.id) {
+        const propertyKit = property[0]?.kit;
+        if (!propertyKit) {
+          return res.status(200).json(property[0])
+        }
+        const deviceId = propertyKit.device_id;
+        // We call the AWS API Gateway and request to start camera streams
+        await triggerCameraStreams(deviceId);
+        return res.status(200).json(property[0])
+
+      }
+    });
+
+  })
+};
+//---------------------- Rahman Test Functions ----------------------//
+
+
+module.exports = {
+  property: property,
+  propertyList: propertyList,
+  propertyAssignList: propertyAssignList,
+  propertiesUser: propertiesUser,
+  getSinglePublicProperty: getSinglePublicProperty,
+  propertiesPublic: propertiesPublic,
+  makeBook: makeBook,
+  calcAvailability: calcAvailability,
+  cloneProperty: cloneProperty,
+  propertyListCustomSearch: propertyListCustomSearch,
+  newProperty: newProperty,
+  updateProperty: updateProperty,
+  updatePropertyKit: updatePropertyKit,
+  assignPropertyToUser: assignPropertyToUser,
+  propertyByIdTest,
+  calcMonthAvailability,
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Jun 18 2024 16:15:44 GMT-0700 (北美太平洋夏令时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
