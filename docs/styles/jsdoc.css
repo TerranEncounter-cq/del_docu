@@ -2,20 +2,80 @@
   box-sizing: border-box
 }
 
+/* Main style for the API link blocks */
+.api-link {
+  display: block; /* Makes the span behave like a block element */
+  padding: 10px; /* Adds space inside the span, making it easier to click */
+  background-color: #b27afa; /* Desired background color */
+  margin-bottom: 10px; /* Adds space between items */
+  border-radius: 5px; /* Rounded corners for aesthetics */
+}
+
+/* Style for the link within the api-link span */
+.api-link a {
+  display: block; /* Ensures the link fills the entire space of its parent span */
+  color: white; /* Text color for the link */
+  text-decoration: none; /* Removes underline from the link */
+}
+
+/* Hover effect for the api-link span */
+.api-link:hover {
+  background-color: #c992ff; /* Lighter violet on hover */
+}
+
+/* Main style for the API link header */
+.api-link-header {
+  background-color: #6d426d; /* Lighter violet background */
+  padding: 10px 15px; /* Adds padding for better spacing */
+  margin: 5px 0; /* Space between each link */
+  border-radius: 5px; /* Rounded corners */
+  display: block; /* Ensures the header is block-level */
+}
+
+/* Style for the link within the api-link-header */
+.api-link-header a {
+  color: #ffffff; /* White text for contrast */
+  text-decoration: none; /* No underline */
+  display: block; /* Make the link fill the container for easier clicking */
+}
+
+/* Hover effect for the api-link-header */
+.api-link-header:hover {
+  background-color: #c9afda; /* A different background color on hover to make it stand out */
+}
+
+/* Style for the inner type signature span */
+.type-signature-inner a {
+  color: #ca79c4; /* Set color to light purple */
+  text-decoration: none; /* Optional: removes underline from the link */
+}
+
+/* Style for the signature part */
+.signature {
+  color: #dddddd; /* Slightly lighter text for the signature part */
+  font-weight: bold; /* Bold weight for emphasis */
+}
+
 .directory-structure {
-  background-color: #f8f8f8; /* Lighter grey background for the whole section */
-  padding: 20px; /* Padding around the content */
-  margin-bottom: 20px; /* Bottom margin for spacing */
-  border-radius: 5px; /* Rounded corners for the section */
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .directory-entry {
-  background-color: #fff; /* White background for entries */
-  border: 1px solid #ddd; /* Light grey border */
-  padding: 15px; /* Padding inside each entry */
-  margin-bottom: 10px; /* Space between entries */
-  border-radius: 5px; /* Rounded corners for each entry */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for shadow and background */
+}
+
+.directory-entry:hover {
+  background-color: rgb(255, 249, 249); /* Lighter blue on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Deeper shadow for a "lifted" effect */
 }
 
 .directory-entry h4 {
@@ -23,14 +83,20 @@
   margin-bottom: 5px; /* Space below the directory name */
 }
 
+/* Specific style for emphasizing 'controllers/' */
+.directory-entry h4.controllers {
+  font-weight: bold; /* Make the font bold */
+  color: #ca79c4; /* Change the color to a standout pink */
+  font-size: 20px; /* Increase the font size */
+}
 .directory-entry p {
-  margin: 0; /* Remove margin from paragraph */
-  line-height: 1.5; /* Increased line height for readability */
-  color: #666; /* Dark grey text for readability */
+  margin: 0;
+  line-height: 1.5;
+  color: #666;
 }
 
 .directory-entry strong {
-  color: #333; /* Dark grey for emphasis */
+  color: #333;
 }
 
 html, body {
